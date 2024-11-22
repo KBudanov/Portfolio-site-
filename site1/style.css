@@ -1,0 +1,200 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: white;
+    color: black;
+    font-family: "Instrument Sans", sans-serif;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+
+/*heaeder css */
+
+.headerWrapper {
+    display: flex;
+    flex-direction: row;
+    padding-top: 1vh;
+    justify-content: space-between;
+}
+
+.headerImg {
+    width: auto;
+    height: 4vh;
+    margin-left: 2vw;
+}
+
+.headerList {
+    list-style: none;
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    margin-top: 1vh;
+}
+
+.headerList>li {
+    margin-right: 50px;
+}
+
+.headerButton {
+    color: #0A6DE0;
+    background-color: white;
+    border: 1px solid #0A6DE0;
+    border-radius: 20px;
+    padding: 4px;
+    width: auto;
+    height: 3vh;
+    margin-right: 2vw;
+}
+
+.logoText {
+    color: #0A6DE0;
+    font-size: 22px;
+    left: 0;
+}
+
+
+/*1st screen css*/
+
+.wrapper1Screen {
+    display: flex;
+    flex-direction: column;
+}
+
+.wrapper1Screen>div {
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    display: flex;
+    justify-content: space-around;
+}
+
+.largeText {
+    font-weight: 700;
+    font-size: 135px;
+    color: #444444;
+}
+
+.consultHeadButton {
+    background-color: #0A6DE0;
+    color: white;
+    border: none;
+    border-radius: 20px;
+    padding: 15px;
+    width: 15%;
+    height: 9%;
+    font-size: small;
+    margin-top: 3%;
+}
+
+.anotherText {
+    font-size: 16px;
+    width: 10%;
+    text-align: left;
+    margin-top: 2%;
+}
+
+.image1 {
+    width: 90%;
+    margin: 5%;
+    height: auto;
+}
+
+
+/*2nd screen code*/
+
+.wrapper2Screen {
+    display: flex;
+    flex-direction: row;
+    margin: 5%;
+}
+
+.wrapper2Screen1div {
+    width: 65%;
+    margin: 2%;
+}
+
+.innerDiv1 {
+    width: 85%;
+    background-color: #F6F6F6;
+    color: #444444;
+    border-radius: 15px;
+    padding: 5%;
+    margin: 2%;
+}
+
+.innerDiv2 {
+    width: 35%;
+    background-color: #F6F6F6;
+    color: #444444;
+    border-radius: 15px;
+    padding: 5%;
+    height: 13vh;
+    margin: 2%;
+}
+
+#innerDiv3 {
+    width: 35%;
+    background-color: #F6F6F6;
+    color: #444444;
+    border-radius: 15px;
+    padding: 5%;
+    height: 20vh;
+    margin: 2%;
+    float: right;
+    top: 0;
+}
+
+.img2Div>img {
+    height: 100vh;
+}
+
+.secondScreenP {
+    font-weight: 700;
+    font-size: 77px;
+    color: #444444;
+}
+
+
+/*3rd screen css*/
+
+.textDivScreen3 {
+    margin: 0 auto;
+    width: 30%;
+    font-size: 37px;
+    font-weight: 700;
+    display: flex;
+    flex-direction: row;
+}
+
+
+/*form css*/
+
+.formWrapper {
+    display: flex;
+    flex-direction: column;
+    margin: 5%;
+}
+
+.inputI {
+    border-radius: 100px;
+    height: 7vh;
+    width: 20vw;
+    border: 1px solid #444444;
+    margin: 0.5%;
+    text-align: center;
+}
+
+.inputI::placeholder {
+    margin: 2px;
+}
+
+iframe {
+    border-radius: 15px;
+}
