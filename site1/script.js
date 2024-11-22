@@ -20,4 +20,8 @@ Mail: ${mail}%0A
     let botUrl2 = `https://api.telegram.org/bot${botToken}/sendMessage?chat_id=${tgIdT}&text=${orderText}`;
     $.post(botUrl)
     $.post(botUrl2)
+
+    $("#firsName").val("")
+    $("#lastName").val("")
+    $("#mail").val("")
 })

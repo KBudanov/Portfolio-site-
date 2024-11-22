@@ -12,6 +12,7 @@ body {
 a {
     text-decoration: none;
     color: black;
+    cursor: pointer;
 }
 
 
@@ -64,7 +65,7 @@ a {
 
 footer {
     width: 90%;
-    height: 60vh;
+    height: 80vh;
     margin: 0 auto;
     background-color: #0A6DE0;
     margin-bottom: 2%;
@@ -74,12 +75,21 @@ footer {
 
 .footerTextWr {
     width: 95%;
-    height: 20vh;
+    height: 8vh;
     margin: 3%;
     display: flex;
     flex-direction: row;
     padding-top: 4vh;
     justify-content: space-between;
+}
+
+.footerTextWr2 {
+    width: 95%;
+    height: 20vh;
+    margin: 3%;
+    display: flex;
+    flex-direction: row;
+    padding-top: 4vh;
 }
 
 .footerText1Wr {
@@ -100,6 +110,22 @@ footer {
 
 .fLine3Div {
     width: auto;
+}
+
+.footerList {
+    list-style: none;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    color: #FFFFFF;
+}
+
+.footerList>li {
+    margin-bottom: 1vh;
+}
+
+.footerList>li>a {
+    color: #FFFFFF;
 }
 
 
@@ -194,6 +220,21 @@ footer {
     top: 0;
 }
 
+.consultS2Button {
+    background-color: #0A6DE0;
+    color: white;
+    border: none;
+    border-radius: 30px;
+    padding: 15px;
+    width: 24%;
+    height: 6%;
+    font-size: small;
+    margin-top: 3%;
+    position: absolute;
+    margin-top: 2vh;
+    margin-left: 2vh;
+}
+
 .img2Div>img {
     height: 100vh;
 }
@@ -217,7 +258,17 @@ footer {
 }
 
 
-/*form css*/
+/*last screen*/
+
+.lastScreenWrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 90%;
+    margin: 0 auto;
+    margin-bottom: 15vh;
+    color: #444444;
+}
 
 .formWrapper {
     display: flex;
@@ -239,5 +290,24 @@ footer {
 }
 
 iframe {
-    border-radius: 15px;
+    border-radius: 30px;
+}
+
+.container {
+    width: 50%;
+    text-align: left;
+}
+
+.main-text {
+    font-size: 48px;
+    font-weight: 700;
+}
+
+.main-text span {
+    color: #0A6DE0;
+}
+
+.subtext {
+    font-size: 18px;
+    color: #444444;
 }
