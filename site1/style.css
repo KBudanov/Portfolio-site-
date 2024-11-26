@@ -28,7 +28,7 @@ a {
 .headerImg {
     width: auto;
     height: 4vh;
-    margin-left: 2vw;
+    margin-left: 3.5vw;
 }
 
 .headerList {
@@ -51,8 +51,21 @@ a {
     padding: 4px;
     width: auto;
     height: 3vh;
-    margin-right: 2vw;
+    margin-right: 4.5vw;
+    margin-top: 0.6vh;
 }
+
+
+/*.gradientBtn {
+    position: absolute;
+    width: 20%;
+    height: 20%;
+    border-radius: 100%;
+    top: 0;
+    right: -1;
+    opacity: 0.5;
+    background: radial-gradient(circle, #7b9fd3, #FFFFFF);
+}*/
 
 .logoText {
     color: #0A6DE0;
@@ -156,10 +169,11 @@ footer {
     border: none;
     border-radius: 20px;
     padding: 15px;
-    width: 15%;
-    height: 9%;
+    width: 22%;
+    height: 15%;
     font-size: small;
     margin-top: 3%;
+    margin-left: -2%;
 }
 
 .anotherText {
@@ -265,6 +279,11 @@ footer {
     margin-top: 5vh;
     display: flex;
     flex-direction: row;
+}
+
+.allCardsWr {
+    background: radial-gradient(circle closest-side, #7b9fd3, #FFFFFF);
+    background-color: rgba(0, 0, 0, 0.2);
 }
 
 .textDivScreen3>p>span {
