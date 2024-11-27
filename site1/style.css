@@ -15,6 +15,10 @@ a {
     cursor: pointer;
 }
 
+a :hover {
+    color: #F6F6F6;
+}
+
 
 /*heaeder css */
 
@@ -250,7 +254,8 @@ footer {
 }
 
 .img2Div>img {
-    height: 100vh;
+    margin-top: 10%;
+    height: 87vh;
 }
 
 .secondScreenP {
@@ -261,6 +266,10 @@ footer {
 
 
 /*3rd screen css*/
+
+.wrapper3Screen {
+    margin-top: 10%;
+}
 
 .textDivScreen3 {
     margin: 0 auto;
@@ -337,9 +346,47 @@ footer {
 /*fifth screen*/
 
 .fifthScreenWrapper {
-    width: 80vw;
+    width: 90%;
+    margin: 0 auto;
     height: 90vh;
-    border: 2px solid black;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10%;
+    margin-top: 10%;
+}
+
+.fifthScreenText p {
+    font-weight: 700;
+    font-size: 50px;
+    color: #444444;
+}
+
+.fifthScreenText span {
+    color: #0A6DE0;
+}
+
+.fifthScreenText {
+    width: auto;
+    margin: 0 auto;
+}
+
+.fifthScreenTextWr {
+    display: flex;
+    flex-direction: row;
+}
+
+.shareYourExp {
+    border: 2px solid #0A6DE0;
+    background-color: #FFFFFF;
+    color: #0A6DE0;
+    border-radius: 100px;
+    font-weight: 500;
+    font-size: 20px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    width: 25%;
+    height: 20vh;
+    padding: 0.5%;
+    margin: 0 auto;
 }
 
 
@@ -358,16 +405,18 @@ footer {
 .formWrapper {
     display: flex;
     flex-direction: column;
-    margin: 5%;
+    margin-top: 5%;
+    margin-left: 0;
 }
 
 .inputI {
     border-radius: 100px;
     height: 7vh;
-    width: 20vw;
+    width: 25vw;
     border: 1px solid #444444;
     margin: 0.5%;
-    text-align: center;
+    text-align: left;
+    padding-left: 2%;
 }
 
 .inputI::placeholder {
@@ -379,7 +428,7 @@ iframe {
 }
 
 .container {
-    width: 50%;
+    width: 60%;
     text-align: left;
 }
 
@@ -393,16 +442,51 @@ iframe {
 }
 
 .subtext {
-    font-size: 18px;
+    font-size: 15px;
     color: #444444;
+    margin-left: 2%;
+}
+
+.consultLastScreenBtn {
+    background-color: #0A6DE0;
+    color: white;
+    border: none;
+    padding: 15px;
+    height: 5vh;
+    width: 17vw;
+    font-size: small;
+    margin-top: 3%;
+    margin-left: -2%;
+    border-radius: 100px;
+    margin: 0.5%;
 }
 
 
 /*scroll bar 1 css*/
 
 .screenFourWrapper {
-    width: 90vw;
+    width: 90%;
     height: 90vh;
+    margin: 0 auto;
+    margin-top: 10%;
+}
+
+.textDivScrren4 {
+    width: auto;
+    margin-left: 3%;
+}
+
+.textDivScrren4>p {
+    font-weight: 700;
+    font-size: 55px;
+    color: #444444;
+}
+
+.lowerTextScreen4 {
+    color: #444444;
+    text-align: right;
+    float: right;
+    margin-top: -2px;
 }
 
 .scrollImg {
@@ -411,9 +495,8 @@ iframe {
 }
 
 #container {
-    height: 80vh;
-    border: 2px solid black;
-    width: 100vw;
+    height: 75vh;
+    width: 100%;
     margin: 0;
     padding: 0;
     display: grid;

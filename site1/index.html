@@ -14,19 +14,19 @@
 </head>
 
 <body>
-    <header class="headerWrapper">
+    <header class="headerWrapper" id="header">
         <img src="imgs/headerImg.jpg" alt="logo image" class="headerImg">
         <ul class="headerList">
-            <li><a href="">MAIN</a></li>
-            <li><a href="">ABOUT US</a></li>
-            <li><a href="">SERVICES</a></li>
-            <li><a href="">REVIEWS</a></li>
-            <li><a href="">CONTACTS </a></li>
+            <li><a href="#header">MAIN</a></li>
+            <li><a href="#screen2">ABOUT US</a></li>
+            <li><a href="#screen3">SERVICES</a></li>
+            <li><a href="#screen4">REVIEWS</a></li>
+            <li><a href="#screen5">CONTACTS </a></li>
         </ul>
 
 
         <div class="gradientBtn"></div>
-        <button class="headerButton">MESSAGE US</button>
+        <button class="headerButton"><a href="#consult">MESSAGE US</a></button>
     </header>
 
     <div class="wrapper1Screen">
@@ -36,15 +36,15 @@
             <p class="largeText">HEALTHY</p>
         </div>
         <div>
-            <button class="consultHeadButton">GET A FREE CONSULTATION</button>
+            <button class="consultHeadButton"><a href="#consult" style="color: white;">GET A FREE CONSULTATION</a></button>
             <p class="largeText">& CONFIDENT</p>
         </div>
 
     </div>
     <div> <img src="imgs/img1.jpg" alt="" class="image1"></div>
-    <hr>
 
-    <div class="wrapper2Screen">
+
+    <div class="wrapper2Screen" id="screen2">
         <div class="wrapper2Screen1div">
             <p class="secondScreenP">ABOUT</p>
             <div class="innerDiv1">
@@ -67,14 +67,14 @@
                 </div>
 
             </div>
-            <button style="margin-top: 2vh; position: absolute;" class="consultS2Button">GET A FREE CONSULTATION</button>
+            <button style="margin-top: 2vh; position: absolute;" class="consultS2Button"><a href="#consult" style="color: white;">GET A FREE CONSULTATION</a></button>
 
         </div>
 
         <div class="img2Div"><img src="imgs/img2.jpg" alt=""></div>
     </div>
 
-    <div class="wrapper3Screen">
+    <div class="wrapper3Screen" id="screen3">
         <div class="textDivScreen3">
             <p>WHAT <span> SERVICES</span>
                 <p> WE OFFER</p>
@@ -152,10 +152,14 @@
 
 
     </div>
-    <hr>
+
 
     <div class="screenFourWrapper">
 
+        <div class="textDivScrren4">
+            <p style="text-transform: uppercase;">Meet our <span style="color: #0A6DE0;">doctors</span></p>
+        </div>
+
         <div id="container">
 
             <div id="slider-container">
@@ -179,12 +183,18 @@
 
             </div>
         </div>
-
+        <div class="lowerTextScreen4">
+            <p>Our doctors have 5+ years of experience and have received more <br> than 40 awards from world dental associations.</p>
+        </div>
     </div>
 
-    <div class="fifthScreenWrapper">
+    <div class="fifthScreenWrapper" id="screen4">
         <div class="fifthScreenText">
-
+            <p>WHAT <span>PEOPLE SAY</span></p>
+            <div class="fifthScreenTextWr">
+                <p>ABOUT US</p>
+                <p style="font-size: 13px; font-weight: 400; text-transform: uppercase; margin-left: 10%; margin-top: 3%;">our patients are our <br> best recommendations</p>
+            </div>
         </div>
 
         <div id="container">
@@ -210,23 +220,23 @@
 
             </div>
         </div>
-        <button class="shareYourExp">SHARE YOUR EXPERIENCE</button>
+        <button class="shareYourExp">SHARE YOUR EXPERIRNCE</button>
     </div>
 
 
-    <div class="lastScreenWrapper">
+    <div class="lastScreenWrapper" id="consult">
         <div>
             <div class="inputWrapper">
 
                 <div class="container" style="width: 100%;">
-                    <div style="display: flex; flex-direction: row; width: 90%;">
-                        <div style="width: 50%;">
+                    <div style="display: flex; flex-direction: row; width: 100%;">
+                        <div style="width: 60%;">
                             <p class="main-text">
                                 GET A <span>FREE</span>
                             </p>
                         </div>
                         <p class="subtext">
-                            Every week we hold more than 30 free first consultations in our clinic.
+                            Every week we hold more <br> than 30 free first <br> consultations in our clinic.
                         </p>
                     </div>
 
@@ -237,7 +247,7 @@
                     <input type="text" placeholder="Your first name" class="inputI" id="firsName">
                     <input type="text" placeholder="Your last name" class="inputI" id="lastName">
                     <input type="email" placeholder="Email adress" class="inputI" id="mail">
-                    <button id="ready" class="consultHeadButton">GET A FREE CONSULTATION</button>
+                    <button id="ready" class="consultLastScreenBtn">GET A FREE CONSULTATION</button>
                 </div>
             </div>
         </div>
@@ -252,7 +262,7 @@
 
 
     <footer>
-        <div class="footerTextWr">
+        <div class="footerTextWr" id="screen5">
             <div class="footerText1Wr">
                 <p class=" footerText1">PERFECT SMILE</p>
                 <p class="footerText">We do more than just treat teeth - we <br> create smiles that give confidence and <br> change lives</p>
@@ -269,18 +279,20 @@
         <div class="footerTextWr2">
             <div>
                 <p style="font-size: 20px; font-weight: 600; text-transform: uppercase;">our contact information</p>
-                <p style="margin-top: 2vh;">Ukraine, Kyiv, Vasylkivska st. 49a</p>
-                <p style="margin-top: 2vh;">Everyday from 10:00 to 19:00</p>
-                <p style="margin-top: 2vh;">Site design by Kseniia Zakharchuk</p>
+                <p style="margin-top: 1vh;">Ukraine, Kyiv, Vasylkivska st. 49a</p>
+                <p style="margin-top: 1vh;">Everyday from 10:00 to 19:00</p>
+                <p style="margin-top: 1vh;">
+                    <a href="https://www.instagram.com/kseniiazakharchuk27?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" style="color: white;" target="_blank">Site design by Kseniia Zakharchuk</a></p>
+                <p style="margin-top: 1vh;"><a href="https://t.me/vlvlvlvlvlvvlv" style="color: white;" target="_blank">Site developing by Vlad Stadnichenko</a></p>
 
             </div>
             <div style="margin-left: 10%;">
                 <ul class="footerList">
-                    <li><a href="">MAIN</a></li>
-                    <li><a href="">ABOUT US</a></li>
-                    <li><a href="">SERVICES</a></li>
-                    <li><a href="">REVIEWS</a></li>
-                    <li><a href="">CONTACTS </a></li>
+                    <li><a href="#header">MAIN</a></li>
+                    <li><a href="#screen2">ABOUT US</a></li>
+                    <li><a href="#screen3">SERVICES</a></li>
+                    <li><a href="#screen4">REVIEWS</a></li>
+                    <li><a href="#screen5">CONTACTS </a></li>
                 </ul>
             </div>
             <div style="margin-left: 16%;">
