@@ -111,3 +111,22 @@ function slideLeft() {
         buttons[0].classList.remove('inactive');
     }
 };
+
+let addreviewDiv = $(".addReviews");
+addreviewDiv.hide();
+$("#addReview").on("click", function() {
+    addreviewDiv.show();
+})
+
+$("#hideAR").on("click", function() {
+    addreviewDiv.hide();
+    $("#addRinp1").val("")
+    $("#addRinp2").val("")
+})
+
+
+$("#hideARR").on("click", function() {
+    addreviewDiv.hide();
+    $("#addRinp1").val("")
+    $("#addRinp2").val("")
+})

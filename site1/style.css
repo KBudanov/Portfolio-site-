@@ -506,7 +506,7 @@ iframe {
 #slider-container {
     height: 70vh;
     width: 85vw;
-    position: relative;
+    /*position relative*/
     overflow: hidden;
     padding: 20px;
 }
@@ -580,4 +580,14 @@ iframe {
     #slider-container #slider .slide {
         width: calc(10% - 20px);
     }
+}
+
+
+/*hide add review div*/
+
+.addReviews {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
 }
