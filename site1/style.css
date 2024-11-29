@@ -506,36 +506,25 @@ iframe {
 #slider-container {
     height: 70vh;
     width: 85vw;
-    /*position relative*/
+    position: relative;
     overflow: hidden;
     padding: 20px;
 }
 
+.scrool1Btns {
+    width: 15%;
+    float: right;
+}
+
 .scrool1Btns .btn {
-    position: absolute;
-    top: calc(50% - 30px);
     height: 30px;
     width: 30px;
-    border-left: 8px solid rgb(0, 0, 0);
-    border-top: 8px solid rgb(0, 0, 0);
 }
 
-.scrool1Btns .btn:hover {
-    transform: scale(1.2);
-}
-
-.scrool1Btns .btn.inactive {
-    border-color: rgb(153, 121, 126)
-}
-
-.scrool1Btns .btn:first-of-type {
-    transform: rotate(-45deg);
-    left: 10px
-}
-
-.scrool1Btns .btn:last-of-type {
-    transform: rotate(135deg);
-    right: 10px;
+i {
+    color: black;
+    font-size: 30px;
+    font-weight: 200;
 }
 
 #slider-container #slider {

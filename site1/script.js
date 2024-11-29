@@ -32,7 +32,7 @@ Mail: ${mail}%0A
 
 var container = document.getElementById('container')
 var slider = document.getElementById('slider');
-var slides = document.getElementsByClassName('slide').length;
+var slides = 5;
 var buttons = document.getElementsByClassName('btn');
 
 
