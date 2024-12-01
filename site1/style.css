@@ -527,6 +527,15 @@ i {
     font-weight: 200;
 }
 
+#selectedSlider {
+    height: 100%;
+    margin-bottom: 5%;
+    background-color: rgba(0, 0, 0, 0.6);
+    border: 2px black;
+}
+
+.unSelectedSlider {}
+
 #slider-container #slider {
     display: flex;
     width: 1000%;
@@ -534,7 +543,7 @@ i {
     transition: all .5s;
 }
 
-#slider-container #slider .slide {
+.slide {
     height: 90%;
     margin: auto 10px;
     background-color: #F6F6F6;
