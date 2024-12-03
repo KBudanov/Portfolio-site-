@@ -511,14 +511,17 @@ iframe {
     padding: 20px;
 }
 
-.scrool1Btns {
+.scrool1Btnss {
     width: 15%;
+    position: absolute;
     float: right;
 }
 
-.scrool1Btns .btn {
+.scrool1Btnss .btn {
     height: 30px;
     width: 30px;
+    user-select: none;
+    cursor: pointer;
 }
 
 i {
@@ -527,30 +530,14 @@ i {
     font-weight: 200;
 }
 
-.selectedSlider {
-    height: 95%;
+#selectedSlider {
+    height: 100%;
     margin-bottom: 5%;
-    border: 2px solid black;
-    /* Added solid border */
+    background-color: rgba(0, 0, 0, 0.6);
+    border: 2px black;
 }
 
-.selectedSlider img {
-    opacity: 1;
-}
-
-.unSelectedSlider img {
-    opacity: 0.5;
-}
-
-.unSelectedSlider {
-    height: 90%;
-    margin: auto 10px;
-    background-color: #F6F6F6;
-    box-shadow: 2px 2px 4px 2px white, -2px -2px 4px 2px white;
-    display: grid;
-    place-items: center;
-    border-radius: 15px;
-}
+.unSelectedSlider {}
 
 #slider-container #slider {
     display: flex;
@@ -560,13 +547,13 @@ i {
 }
 
 .slide {
-    height: 90%;
-    margin: auto 10px;
+    height: 58%;
+    border-radius: 15px;
+    margin: auto 20px;
     background-color: #F6F6F6;
     box-shadow: 2px 2px 4px 2px white, -2px -2px 4px 2px white;
     display: grid;
     place-items: center;
-    border-radius: 15px;
 }
 
 #slider-container #slider .slide :hover {
@@ -602,7 +589,37 @@ i {
 
 .addReviews {
     position: absolute;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.6);
+    width: 80%;
+    height: 50%;
+    z-index: 9;
+    margin-left: 10%;
+    margin-top: 10%;
+    border-radius: 15px;
+    background-color: rgba(0, 0, 0, 0.8);
+    text-align: center;
+}
+
+
+/*5th screen slider*/
+
+.reviewImg {
+    height: 146px;
+    width: 146px;
+    top: -35%;
+    left: -31%;
+    position: relative;
+}
+
+.starRight {
+    position: relative;
+    font-size: 20px;
+    color: blue;
+    top: -230%;
+    right: -50%;
+}
+
+.textSlider2 {
+    margin-top: 0px;
+    height: 250%;
+    width: 90%;
 }

@@ -32,7 +32,7 @@ Mail: ${mail}%0A
 
 var container = document.getElementById('container')
 var slider = document.getElementById('slider');
-var slides = 5;
+var slides = 7;
 var buttons = document.getElementsByClassName('btn');
 
 
@@ -50,54 +50,6 @@ function checkWidth() {
     containerWidth = container.offsetWidth;
     setParams(containerWidth);
 }
-
-function updateSlideClasses() {
-    // Get all slide elements (assuming they are direct children of the slider)
-    const slideElements = slider.children;
-
-    for (let i = 0; i < slideElements.length; i++) {
-        if (i === currentPosition) {
-            // Apply styles for the selected slider
-            slideElements[i].classList.add('selectedSlider');
-            slideElements[i].classList.remove('unSelectedSlider');
-        } else {
-            // Apply styles for the unselected sliders
-            slideElements[i].classList.add('unSelectedSlider');
-            slideElements[i].classList.remove('selectedSlider');
-        }
-    }
-}
-
-function slideRight() {
-    if (currentPosition > 0) {
-        currentPosition--;
-        currentMargin += (100 / slidesPerPage);
-        slider.style.marginLeft = currentMargin + '%';
-        updateSlideClasses();
-    }
-    updateButtonStates();
-}
-
-function slideLeft() {
-    if (currentPosition < slidesCount) {
-        currentPosition++;
-        currentMargin -= (100 / slidesPerPage);
-        slider.style.marginLeft = currentMargin + '%';
-        updateSlideClasses();
-    }
-    updateButtonStates();
-}
-
-function updateButtonStates() {
-    buttons[0].classList.toggle('inactive', currentPosition === 0);
-    buttons[1].classList.toggle('inactive', currentPosition === slidesCount);
-}
-
-setParams(containerWidth);
-updateSlideClasses();
-
-
-
 
 function setParams(w) {
     if (w < 551) {
@@ -140,7 +92,6 @@ function slideRight() {
     };
     if (currentPosition === 0) {
         buttons[0].classList.add('inactive');
-        // buttons[0].classList.add('#unSelectedSlider');
     }
     if (currentPosition < slidesCount) {
         buttons[1].classList.remove('inactive');
