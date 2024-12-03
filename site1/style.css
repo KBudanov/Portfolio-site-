@@ -527,14 +527,30 @@ i {
     font-weight: 200;
 }
 
-#selectedSlider {
-    height: 100%;
+.selectedSlider {
+    height: 95%;
     margin-bottom: 5%;
-    background-color: rgba(0, 0, 0, 0.6);
-    border: 2px black;
+    border: 2px solid black;
+    /* Added solid border */
 }
 
-.unSelectedSlider {}
+.selectedSlider img {
+    opacity: 1;
+}
+
+.unSelectedSlider img {
+    opacity: 0.5;
+}
+
+.unSelectedSlider {
+    height: 90%;
+    margin: auto 10px;
+    background-color: #F6F6F6;
+    box-shadow: 2px 2px 4px 2px white, -2px -2px 4px 2px white;
+    display: grid;
+    place-items: center;
+    border-radius: 15px;
+}
 
 #slider-container #slider {
     display: flex;
@@ -550,6 +566,7 @@ i {
     box-shadow: 2px 2px 4px 2px white, -2px -2px 4px 2px white;
     display: grid;
     place-items: center;
+    border-radius: 15px;
 }
 
 #slider-container #slider .slide :hover {
