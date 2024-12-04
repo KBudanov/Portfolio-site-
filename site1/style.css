@@ -7,6 +7,7 @@ body {
     background-color: white;
     color: black;
     font-family: "Instrument Sans", sans-serif;
+    overflow-x: hidden;
 }
 
 a {
@@ -47,9 +48,9 @@ a :hover {
     margin-right: 50px;
 }
 
-.headerButton {
+#headerButton {
     color: #0A6DE0;
-    background-color: white;
+    background-color: transparent;
     border: 1px solid #0A6DE0;
     border-radius: 20px;
     padding: 4px;
@@ -57,6 +58,21 @@ a :hover {
     height: 3vh;
     margin-right: 4.5vw;
     margin-top: 0.6vh;
+}
+
+#headerButton a {
+    color: #0A6DE0;
+}
+
+.gradientBtn {
+    background: radial-gradient(circle closest-side, #7b9fd3, #FFFFFF);
+    z-index: -1;
+    position: absolute;
+    margin-left: 73%;
+    top: -15%;
+    width: 40%;
+    height: 40%;
+    overflow: hidden;
 }
 
 
@@ -244,13 +260,12 @@ footer {
     border: none;
     border-radius: 30px;
     padding: 15px;
-    width: 24%;
-    height: 6%;
+    width: 20%;
+    height: 5%;
     font-size: small;
-    margin-top: 3%;
     position: absolute;
-    margin-top: 2vh;
     margin-left: 2vh;
+    margin-top: -5%;
 }
 
 .img2Div>img {
@@ -291,8 +306,8 @@ footer {
 }
 
 .allCardsWr {
-    background: radial-gradient(circle closest-side, #7b9fd3, #FFFFFF);
     background-color: rgba(0, 0, 0, 0.2);
+    background: radial-gradient(circle closest-side, #7b9fd3, #FFFFFF);
 }
 
 .textDivScreen3>p>span {
@@ -387,6 +402,28 @@ footer {
     height: 20vh;
     padding: 0.5%;
     margin: 0 auto;
+}
+
+.gradientWrapper3 {
+    background: radial-gradient(circle closest-side, #7b9fd3, #FFFFFF);
+    z-index: -1;
+    position: absolute;
+    margin-left: 60%;
+    width: 60%;
+    height: 60%;
+    overflow: hidden;
+    margin-top: 22%;
+}
+
+.gradientWrapper2 {
+    background: radial-gradient(circle closest-side, #7b9fd3, #FFFFFF);
+    z-index: -1;
+    position: absolute;
+    width: 70%;
+    height: 70%;
+    overflow: hidden;
+    margin-top: 25%;
+    margin-left: -30%;
 }
 
 
