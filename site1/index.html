@@ -19,7 +19,9 @@
         <img src="imgs/headerImg.jpg" alt="logo image" class="headerImg">
         <ul class="headerList">
             <li><a href="#header">MAIN</a></li>
-            <li><a href="#screen2">ABOUT US</a></li>
+            <li><a href="#screen2" style="  white-space: nowrap;        /* Prevents text from wrapping to a new line */
+                overflow: hidden;           /* Ensures content that overflows is hidden */
+                text-overflow: ellipsis; ">ABOUT US</a></li>
             <li><a href="#screen3">SERVICES</a></li>
             <li><a href="#screen4">REVIEWS</a></li>
             <li><a href="#screen5">CONTACTS </a></li>
@@ -31,14 +33,14 @@
     </header>
 
     <div class="wrapper1Screen">
-        <div>
+        <div class="txtL1">
             <p class="largeText">SMILE</p>
-            <p class="anotherText">WE DO MORE THAN JUST TREAT TEETH - WE CREATE SMILES THAT GIVE CONFIDENCE AND CHANGE LIVES.</p>
-            <p class="largeText">HEALTHY</p>
+            <p class="anotherText">WE DO MORE THAN JUST TREAT <br> TEETH - WE CREATE SMILES <br> THAT GIVE CONFIDENCE AND <br> CHANGE LIVES.</p>
+            <p class="largeText" style="float: right;">HEALTHY</p>
         </div>
         <div>
             <button class="consultHeadButton"><a href="#consult" style="color: white;">GET A FREE CONSULTATION</a></button>
-            <p class="largeText">& CONFIDENT</p>
+            <p class="largeText" id="last">& CONFIDENT</p>
         </div>
 
     </div>
@@ -68,7 +70,7 @@
                 </div>
 
             </div>
-            <button style="margin-top: 0.0001%; position: absolute;" class="consultS2Button"><a href="#consult" style="color: white;">GET A FREE CONSULTATION</a></button>
+            <button class="consultS2Button"><a href="#consult" style="color: white;">GET A FREE CONSULTATION</a></button>
 
         </div>
 
@@ -91,7 +93,7 @@
                         <li>Treatment of baby teeth</li>
                         <li>Prevention of cavities</li>
                     </ul>
-                    <p style="font-size: medium; font-weight: 600; margin-top: 10%">Prices from: 1000 UAH</p>
+                    <p style="font-size: medium; font-weight: 600;   position: absolute; margin-top: 65px;left: 2;">Prices from: 1000 UAH</p>
                 </div>
 
                 <div class="cardS3">
@@ -102,7 +104,7 @@
                         <li>Filling of teeth</li>
                         <li>Root canal treatment</li>
                     </ul>
-                    <p style="font-size: medium; font-weight: 600; margin-top: 10%">Prices from: 1000 UAH</p>
+                    <p style="font-size: medium; font-weight: 600; margin-top: 20%">Prices from: 1000 UAH</p>
                 </div>
 
                 <div class="cardS3" id="cardS3Left">
@@ -112,7 +114,7 @@
                         <li>Bite correction</li>
                         <li>Installation of braces</li>
                     </ul>
-                    <p style="font-size: medium; font-weight: 600; margin-top: 10%">Prices from: 10 000 UAH</p>
+                    <p style="font-size: medium; font-weight: 600; margin-top: 37%">Prices from: 10 000 UAH</p>
                 </div>
             </div>
             <div class="cardsGridWrapper">
@@ -124,7 +126,7 @@
                         <li>Veneers</li>
                         <li>Composite restoration</li>
                     </ul>
-                    <p style="font-size: medium; font-weight: 600; margin-top: 10%">Prices from: 3000 UAH</p>
+                    <p style="font-size: medium; font-weight: 600; margin-top: 20%">Prices from: 3000 UAH</p>
                 </div>
 
                 <div class="cardS3" id="cardS3Left">
@@ -134,7 +136,7 @@
                         <li>Tooth extraction</li>
                         <li>Implantation</li>
                     </ul>
-                    <p style="font-size: medium; font-weight: 600; margin-top: 10%">Prices from: 1000 UAH</p>
+                    <p style="font-size: medium; font-weight: 600; position: absolute; margin-top: 65px;left: 2;">Prices from: 1000 UAH</p>
                 </div>
 
                 <div class="cardS3" id="cardS3LeftL">
@@ -145,7 +147,7 @@
                         <li>Cleaning of tartar</li>
                         <li>prevention and treatment of periodontitis</li>
                     </ul>
-                    <p style="font-size: medium; font-weight: 600; margin-top: 10%">Prices from: 1500 UAH</p>
+                    <p style="font-size: medium; font-weight: 600; margin-top: 20%">Prices from: 1500 UAH</p>
                 </div>
             </div>
         </div>
@@ -160,8 +162,8 @@
         <div class="textDivScrren4">
             <p style="text-transform: uppercase;">Meet our <span style="color: #0A6DE0;">doctors</span></p>
             <div class="scrool1Btns">
-                <span onclick="slideRight()" class="btn"> <i class="fas fa-arrow-left"></i></span>
-                <span onclick="slideLeft()" class="btn"> <i class="fas fa-arrow-right"></i></span>
+                <span onclick="slideRight()" class="btn"> <img  src="imgs/left.png" alt=""></span>
+                <span onclick="slideLeft()" class="btn"> <img src="imgs/right.png" alt=""></span>
             </div>
         </div>
 
@@ -191,8 +193,8 @@
             </div>
         </div>
         <div class="scrool1Btnss">
-            <span onclick="slideRight()" class="btn"> <i class="fas fa-arrow-left"></i></span>
-            <span onclick="slideLeft()" class="btn"> <i class="fas fa-arrow-right"></i></span>
+            <span onclick="slideRight()" class="btn"> <img  src="imgs/left.png" alt=""></span>
+            <span onclick="slideLeft()" class="btn"> <img src="imgs/right.png" alt=""></span>
         </div>
         <div id="container">
             <div id="slider-container">
@@ -277,7 +279,7 @@
 
 
     <div class="lastScreenWrapper" id="consult">
-        <div>
+        <div class="allTextNformLastScreen">
             <div class="inputWrapper">
 
                 <div class="container" style="width: 100%;">
@@ -306,7 +308,7 @@
 
         <div>
             <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2542.4277632569388!2d30.650233676934814!3d50.41450128995108!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d4c59bb18d4b5f%3A0xe8ebb36adeb38dd9!2sPerfect%20Smile!5e0!3m2!1sru!2sua!4v1732306191584!5m2!1sru!2sua"
-                width="650" height="650vh" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                width="650" height="550vh" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
         </div>
 
 
