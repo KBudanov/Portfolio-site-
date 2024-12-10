@@ -133,6 +133,7 @@ $("#hideARR").on("click", function() {
 
 //slider for screen 4 
 
+
 const swiper = new Swiper('.swiper-container', {
     slidesPerView: 3.5,
     spaceBetween: 30,
@@ -146,7 +147,7 @@ const swiper = new Swiper('.swiper-container', {
         slideChangeTransitionEnd: function() {
             const slides = document.querySelectorAll('.swiper-slide');
             slides.forEach((slide) => {
-                //   slide.style.height = '45vh'; // Default height for all slides
+                //f   slide.style.height = '45vh'; // Default height for all slides
             });
 
             const activeSlide = document.querySelector('.swiper-slide-active');
