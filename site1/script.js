@@ -171,3 +171,10 @@ const swiper = new Swiper('.swiper-container', {
         },
     },
 });
+
+
+//burger menu 
+document.getElementById('burgerMenu').addEventListener('click', function() {
+    const headerList = document.getElementById('headerList');
+    headerList.classList.toggle('show');
+});
