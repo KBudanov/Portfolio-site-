@@ -130,3 +130,43 @@ $("#hideARR").on("click", function() {
     $("#addRinp1").val("")
     $("#addRinp2").val("")
 })
+
+//slider for screen 4 
+
+const swiper = new Swiper('.swiper-container', {
+    slidesPerView: 3.5,
+    spaceBetween: 30,
+    loop: true,
+    navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+    },
+    on: {
+
+        slideChangeTransitionEnd: function() {
+            const slides = document.querySelectorAll('.swiper-slide');
+            slides.forEach((slide) => {
+                //   slide.style.height = '45vh'; // Default height for all slides
+            });
+
+            const activeSlide = document.querySelector('.swiper-slide-active');
+            if (activeSlide) {
+                // activeSlide.style.height = '55vh'; // Increased height for active slide
+            }
+            // Get all slides
+
+
+            // Loop through and toggle visibility
+
+            slides.forEach((slide) => {
+                const textElements = slide.querySelectorAll('h3, p');
+                if (slide.classList.contains('swiper-slide-active')) {
+                    textElements.forEach((el) => (el.style.opacity = '1'));
+
+                } else {
+                    textElements.forEach((el) => (el.style.opacity = '0'));
+                }
+            });
+        },
+    },
+});

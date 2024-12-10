@@ -86,7 +86,7 @@ a :hover {
 
 footer {
     width: 90%;
-    height: 80vh;
+    height: 55vh;
     margin: 0 auto;
     background-color: #0A6DE0;
     margin-bottom: 2%;
@@ -107,10 +107,10 @@ footer {
 .footerTextWr2 {
     width: 95%;
     height: 20vh;
-    margin: 3%;
+    margin: 1%;
     display: flex;
     flex-direction: row;
-    padding-top: 4vh;
+    padding-top: 2vh;
 }
 
 .footerText1Wr {
@@ -368,7 +368,7 @@ footer {
     height: 90vh;
     display: flex;
     flex-direction: column;
-    margin-bottom: 10%;
+    margin-bottom: 6%;
     margin-top: 10%;
 }
 
@@ -455,10 +455,11 @@ footer {
 
 .inputI {
     border-radius: 100px;
-    height: 7vh;
-    width: 25vw;
+    height: 6vh;
+    width: 32vw;
     border: 1px solid #444444;
     margin: 0.5%;
+    margin-top: 1.5%;
     text-align: left;
     padding-left: 2%;
 }
@@ -477,7 +478,7 @@ iframe {
 }
 
 .main-text {
-    font-size: 48px;
+    font-size: 4vw;
     font-weight: 700;
 }
 
@@ -488,7 +489,7 @@ iframe {
 .subtext {
     font-size: 15px;
     color: #444444;
-    margin-left: 2%;
+    margin-top: 1.2%;
 }
 
 .consultLastScreenBtn {
@@ -503,6 +504,7 @@ iframe {
     margin-left: -2%;
     border-radius: 100px;
     margin: 0.5%;
+    margin-top: 2%;
 }
 
 
@@ -683,4 +685,106 @@ i {
     margin-top: 0px;
     height: 250%;
     width: 90%;
+}
+
+
+/*slider 4 css*/
+
+.swiper-container {
+    width: 95%;
+    margin-left: 2.5%;
+    height: 5vh;
+    margin-top: 5%;
+}
+
+.swiper-slide {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0.5;
+    transition: opacity 0.2s ease, transform 0.2s ease;
+    background-color: #F6F6F6;
+    border-radius: 15px;
+}
+
+.swiper-slide-active {
+    opacity: 1;
+    transition: height 0.6s ease-in-out;
+    transform: scale(1.1);
+    position: absolute;
+    margin-bottom: 10vh;
+}
+
+.doctor-card {
+    text-align: center;
+}
+
+.doctor-card img {
+    width: 100%;
+}
+
+.doctor-card h3 {
+    font-weight: 500;
+    font-size: 28px;
+    margin: 5px 0;
+}
+
+.doctor-card p {
+    font-weight: 400;
+    font-size: 17px;
+    color: gray;
+}
+
+.swiper-button-prev,
+.swiper-button-next {
+    color: black;
+    font-size: 1.5rem;
+}
+
+.custom-icon-left::before {
+    content: '←';
+    /* Replace with an icon or image */
+}
+
+.custom-icon-right::before {
+    content: '→';
+}
+
+
+/* Hide text for non-active slides */
+
+.swiper-slide .doctor-card h3,
+.swiper-slide .doctor-card p {
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    /* Smooth appearance when becoming active */
+}
+
+
+/* Show text only for the active slide */
+
+.swiper-slide-active .doctor-card h3,
+.swiper-slide-active .doctor-card p {
+    opacity: 1;
+}
+
+
+/* Apply grayscale filter to all images */
+
+.swiper-slide img {
+    filter: grayscale(100%);
+    /* Make the image black and white */
+    transition: filter 0.3s ease;
+    /* Smooth transition effect */
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+
+/* Remove grayscale filter for the active slide */
+
+.swiper-slide-active img {
+    filter: grayscale(0%);
+    /* Show the image in full color */
 }

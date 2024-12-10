@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+    <!-- Swiper JS -->
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <style>
+        .swiper-container {
+            width: 95%;
+            margin-left: 2.5%;
+            height: 500px;
+        }
+        
+        .swiper-slide {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            opacity: 0.5;
+            transition: opacity 0.2s ease, transform 0.2s ease;
+            background-color: #F6F6F6;
+            border-radius: 15px;
+        }
+        
+        .swiper-slide-active {
+            opacity: 1;
+            transform: scale(1.1);
+            height: 50vh;
+        }
+        
+        .doctor-card {
+            text-align: center;
+            max-width: 250px;
+        }
+        
+        .doctor-card img {
+            width: 100%;
+            border-radius: 10px;
+        }
+        
+        .doctor-card h3 {
+            font-size: 1.2rem;
+            margin: 5px 0;
+        }
+        
+        .doctor-card p {
+            font-size: 1rem;
+            color: gray;
+        }
+        
+        .swiper-button-prev,
+        .swiper-button-next {
+            color: black;
+            font-size: 1.5rem;
+        }
+        
+        .custom-icon-left::before {
+            content: '←';
+            /* Replace with an icon or image */
+        }
+        
+        .custom-icon-right::before {
+            content: '→';
+        }
+        /* Hide text for non-active slides */
+        
+        .swiper-slide .doctor-card h3,
+        .swiper-slide .doctor-card p {
+            opacity: 0;
+            transition: opacity 0.3s ease;
+            /* Smooth appearance when becoming active */
+        }
+        /* Show text only for the active slide */
+        
+        .swiper-slide-active .doctor-card h3,
+        .swiper-slide-active .doctor-card p {
+            opacity: 1;
+        }
+        /* Apply grayscale filter to all images */
+        
+        .swiper-slide img {
+            filter: grayscale(100%);
+            /* Make the image black and white */
+            transition: filter 0.3s ease;
+            /* Smooth transition effect */
+        }
+        /* Remove grayscale filter for the active slide */
+        
+        .swiper-slide-active img {
+            filter: grayscale(0%);
+            /* Show the image in full color */
+        }
+    </style>
+</head>
+
+<body>
+    <div class="swiper-button-prev"></div>
+    <div class="swiper-button-next"></div>
+
+    <div class="swiper-container">
+        <div class="swiper-wrapper">
+            <!-- Slide 1 -->
+            <div class="swiper-slide">
+                <div class="doctor-card">
+                    <h3>Dr. Anna Bondarenko</h3>
+                    <p>Orthodontist</p>
+                    <img src="imgs/doc1.png">
+                </div>
+            </div>
+            <!-- Slide 2 -->
+            <div class="swiper-slide">
+                <div class="doctor-card">
+                    <h3>Dr. Petro Saenko</h3>
+                    <p>Pediatric Dentist</p>
+                    <img src="imgs/doc2.png">
+                </div>
+            </div>
+            <div class="swiper-slide">
+                <div class="doctor-card">
+                    <h3>Dr. Oksana Potiy</h3>
+                    <p>Cosmetic Dentist</p>
+                    <img src="imgs/doc3.png">
+                </div>
+            </div>
+            <div class="swiper-slide">
+                <div class="doctor-card">
+                    <h3>Dr. Vitalii Turenko</h3>
+                    <p>Orthodontist</p>
+                    <img src="imgs/doc4.png">
+                </div>
+            </div>
+            <div class="swiper-slide">
+                <div class="doctor-card">
+                    <h3>Dr. Polina Dolyna</h3>
+                    <p>Periodontist</p>
+                    <img src="imgs/doc5.png">
+                </div>
+            </div>
+            <div class="swiper-slide">
+                <div class="doctor-card">
+                    <h3>Dr. Oleksii Verhola</h3>
+                    <p>Surgeon</p>
+                    <img src="imgs/doc6.png">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Navigation -->
+    <div class="swiper-button-prev"></div>
+    <div class="swiper-button-next"></div>
+    </div>
+
+
+    <script>
+        const swiper = new Swiper('.swiper-container', {
+            slidesPerView: 4.5,
+            spaceBetween: 30,
+            loop: true,
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+            on: {
+                slideChangeTransitionEnd: function() {
+                    // Get all slides
+                    const slides = document.querySelectorAll('.swiper-slide');
+
+                    // Loop through and toggle visibility
+                    slides.forEach((slide) => {
+                        const textElements = slide.querySelectorAll('h3, p');
+                        if (slide.classList.contains('swiper-slide-active')) {
+                            textElements.forEach((el) => (el.style.opacity = '1'));
+                        } else {
+                            textElements.forEach((el) => (el.style.opacity = '0'));
+                        }
+                    });
+                },
+            },
+        });
+    </script>
+</body>
+
+</html>

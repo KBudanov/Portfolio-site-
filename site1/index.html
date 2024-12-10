@@ -12,6 +12,9 @@
     <link href="https://fonts.googleapis.com/css2?family=Instrument+Sans:ital,wght@0,400..700;1,400..700&family=Inter:wght@100;300&family=Overlock:wght@700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
         rel="stylesheet">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+    <!-- Swiper JS -->
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
 </head>
 
 <body>
@@ -162,10 +165,59 @@
         <div class="textDivScrren4">
             <p style="text-transform: uppercase;">Meet our <span style="color: #0A6DE0;">doctors</span></p>
             <div class="scrool1Btns">
-                <span onclick="slideRight()" class="btn"> <img  src="imgs/left.png" alt=""></span>
-                <span onclick="slideLeft()" class="btn"> <img src="imgs/right.png" alt=""></span>
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
             </div>
         </div>
+        <div class="swiper-container">
+            <div class="swiper-wrapper">
+                <!-- Slide 1 -->
+                <div class="swiper-slide">
+                    <div class="doctor-card">
+                        <h3>Dr. Anna Bondarenko</h3>
+                        <p>Orthodontist</p>
+                        <img src="imgs/doc1.png">
+                    </div>
+                </div>
+                <!-- Slide 2 -->
+                <div class="swiper-slide">
+                    <div class="doctor-card">
+                        <h3>Dr. Petro Saenko</h3>
+                        <p>Pediatric Dentist</p>
+                        <img src="imgs/doc2.png">
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="doctor-card">
+                        <h3>Dr. Oksana Potiy</h3>
+                        <p>Cosmetic Dentist</p>
+                        <img src="imgs/doc3.png">
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="doctor-card">
+                        <h3>Dr. Vitalii Turenko</h3>
+                        <p>Orthodontist</p>
+                        <img src="imgs/doc4.png">
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="doctor-card">
+                        <h3>Dr. Polina Dolyna</h3>
+                        <p>Periodontist</p>
+                        <img src="imgs/doc5.png">
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="doctor-card">
+                        <h3>Dr. Oleksii Verhola</h3>
+                        <p>Surgeon</p>
+                        <img src="imgs/doc6.png">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 
 
     </div>
@@ -308,7 +360,7 @@
 
         <div>
             <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2542.4277632569388!2d30.650233676934814!3d50.41450128995108!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d4c59bb18d4b5f%3A0xe8ebb36adeb38dd9!2sPerfect%20Smile!5e0!3m2!1sru!2sua!4v1732306191584!5m2!1sru!2sua"
-                width="650" height="550vh" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                width="650" height="510vh" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
         </div>
 
 
@@ -321,17 +373,17 @@
                 <p class=" footerText1">PERFECT SMILE</p>
                 <p class="footerText">We do more than just treat teeth - we <br> create smiles that give confidence and <br> change lives</p>
             </div>
-            <div>
-                <p style="font-weight: 600; font-size: 20px;">PHONE NUMBER</p>
-                <p style="font-size: 20px; font-weight: 400;" class="footerText">+380(93)065-02-11</p>
+            <div style="margin-top: 3%;">
+                <p style="font-weight: 600; font-size: 20px; ">PHONE NUMBER</p>
+                <p style="font-size: 15px; font-weight: 400;" class="footerText">+380(93)065-02-11</p>
             </div>
-            <div class="fLine3Div">
+            <div class="fLine3Div" style="margin-top: 3%;">
                 <p style="font-weight: 600; font-size: 20px;">EMAIL</p>
-                <p style="font-size: 20px; font-weight: 400;" class="footerText">info.perfectsmile@gmail.com</p>
+                <p style="font-size: 15px; font-weight: 400; " class="footerText">info.perfectsmile@gmail.com</p>
             </div>
         </div>
         <div class="footerTextWr2">
-            <div>
+            <div style="margin-left: 2%;">
                 <p style="font-size: 20px; font-weight: 600; text-transform: uppercase;">our contact information</p>
                 <p style="margin-top: 1vh;">Ukraine, Kyiv, Vasylkivska st. 49a</p>
                 <p style="margin-top: 1vh;">Everyday from 10:00 to 19:00</p>
@@ -349,7 +401,7 @@
                     <li><a href="#screen5">CONTACTS </a></li>
                 </ul>
             </div>
-            <div style="margin-left: 16%;">
+            <div style="margin-left: 8%;">
                 <ul class="footerList">
                     <li><a href="">INSTAGRAM</a></li>
                     <li><a href="">TELEGRAM</a></li>
