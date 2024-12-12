@@ -174,7 +174,23 @@ const swiper = new Swiper('.swiper-container', {
 
 
 //burger menu 
+/*
 document.getElementById('burgerMenu').addEventListener('click', function() {
     const headerList = document.getElementById('headerList');
     headerList.classList.toggle('show');
 });
+*/
+
+
+//phone adaptivity
+
+
+document.ready(function() {
+    if (screen.width <= 600) {
+        $(".headerList").hide();
+        $(".burgerMenu").show();
+    } else {
+        $(".burgerMenu").hide();
+        $(".headerList").show();
+    }
+})
