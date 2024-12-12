@@ -183,14 +183,10 @@ document.getElementById('burgerMenu').addEventListener('click', function() {
 
 
 //phone adaptivity
+let burgerBtn = $("#burgerMenu")
 
+$(".headerListMobile").toggle()
 
-document.ready(function() {
-    if (screen.width <= 600) {
-        $(".headerList").hide();
-        $(".burgerMenu").show();
-    } else {
-        $(".burgerMenu").hide();
-        $(".headerList").show();
-    }
+$(burgerBtn).on("click", function() {
+    $(".headerListMobile").toggle()
 })

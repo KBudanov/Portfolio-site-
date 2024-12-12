@@ -859,9 +859,25 @@ i {
 
 /*phone css*/
 
-@media only screen and (max-width: 450px) {
+@media only screen and (max-width: 768px) {
+    .burgerMenu {
+        display: none;
+    }
     body {
-        width: auto;
+        width: 375px;
+        margin: 0 auto;
+        border: 2px solid black;
+    }
+    .burgerMenu {
+        display: block;
+        background: none;
+        border: none;
+        font-size: 24px;
+        cursor: pointer;
+        position: absolute;
+        top: 10px;
+        right: 5%;
+        color: #0A6DE0;
     }
     #headerButton {
         opacity: 0;
@@ -869,43 +885,25 @@ i {
     .headerImg {
         content: url("imgs/headerLogoPhone.png");
     }
-    /* Default styles for desktop */
     .headerList {
-        display: flex;
-        gap: 20px;
-        list-style: none;
-        padding: 0;
-        margin: 0;
-    }
-    .burgerMenu {
         display: none;
-        background: none;
-        border: none;
-        font-size: 24px;
-        cursor: pointer;
     }
-    /* Styles for smaller screens */
-    @media (max-width: 768px) {
-        .burgerMenu {
-            display: block;
-            position: absolute;
-            top: 20px;
-            right: 20px;
-        }
-        .headerList {
-            display: none;
-            flex-direction: column;
-            background: #fff;
-            position: absolute;
-            top: 60px;
-            right: 0;
-            width: 200px;
-            border: 1px solid #ccc;
-            box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
-            padding: 10px;
-        }
-        .headerList.show {
-            display: flex;
-        }
+    .headerListMobile {
+        position: absolute;
+        background-color: #F6F6F6;
+        list-style: none;
+        border-radius: 5%;
+        font-size: 15px;
+        height: 300px;
+        width: 150px;
+        text-align: center;
+        right: 20px;
+        top: 60px;
+    }
+    .headerListMobile>li {
+        margin-top: 30px;
+    }
+    .headerListMobile>li :hover {
+        font-size: 20px;
     }
 }
