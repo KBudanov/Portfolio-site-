@@ -114,8 +114,8 @@ a :hover {
     background: radial-gradient(circle closest-side, #7b9fd3, #FFFFFF);
     z-index: -1;
     position: absolute;
-    margin-left: 73%;
-    top: -15%;
+    margin-left: 950px;
+    top: -13%;
     width: 40%;
     height: 40%;
     overflow: hidden;
@@ -132,7 +132,7 @@ a :hover {
 
 footer {
     width: 90%;
-    height: 55vh;
+    height: 612px;
     margin: 0 auto;
     background-color: #0A6DE0;
     margin-bottom: 2%;
@@ -198,44 +198,6 @@ footer {
 
 /*1st screen css*/
 
-@media only screen and (max-width: 1500px) {
-    .largeText {
-        font-weight: 700;
-        font-size: 125px;
-        color: #444444;
-        left: 0;
-    }
-    .consultHeadButton {
-        background-color: #0A6DE0;
-        color: white;
-        border: none;
-        border-radius: 100px;
-        padding: 15px;
-        width: 375px;
-        height: 63px;
-        font-size: 17px;
-        font-weight: 500;
-        margin-top: 3%;
-    }
-    .anotherText {
-        font-size: 13px;
-        width: 30%;
-        height: 100%;
-        text-align: left;
-        margin-top: 2%;
-        margin-left: 7%;
-    }
-    #last {
-        margin-left: 14.5%;
-        font-size: 115px;
-    }
-    .image1 {
-        width: 95%;
-        margin-left: 2.5%;
-        height: auto;
-    }
-}
-
 .largeText {
     font-weight: 700;
     font-size: 125px;
@@ -293,60 +255,6 @@ footer {
 
 /*2nd screen code*/
 
-@media only screen and (max-width: 1500px) {
-    .innerDiv1 {
-        width: 85%;
-        background-color: #F6F6F6;
-        color: #444444;
-        border-radius: 15px;
-        padding: 5%;
-        margin: 2% 2% 2% 0;
-    }
-    .innerDiv2 {
-        width: 35%;
-        background-color: #F6F6F6;
-        color: #444444;
-        border-radius: 15px;
-        padding: 5%;
-        height: 13vh;
-        margin: 2% 2% 2% 0;
-    }
-    #innerDiv3 {
-        width: 35%;
-        background-color: #F6F6F6;
-        color: #444444;
-        border-radius: 15px;
-        padding: 5%;
-        height: 20vh;
-        margin: 2% 2% 2% 2%;
-        float: right;
-        top: 0;
-    }
-    .consultS2Button {
-        background-color: #0A6DE0;
-        color: white;
-        border: none;
-        border-radius: 30px;
-        padding: 15px;
-        width: 350px;
-        height: 63px;
-        font-size: small;
-        position: absolute;
-        margin-top: -2%;
-    }
-    .img2Div>img {
-        margin-top: 3%;
-        height: 725px;
-        width: 536px;
-        margin-left: 6%;
-    }
-    .secondScreenP {
-        font-weight: 700;
-        font-size: 77px;
-        color: #444444;
-    }
-}
-
 .innerDiv1 {
     width: 85%;
     background-color: #F6F6F6;
@@ -385,10 +293,10 @@ footer {
     border-radius: 30px;
     padding: 15px;
     width: 350px;
-    height: 63px;
+    height: 60px;
     font-size: small;
     position: absolute;
-    margin-top: -2%;
+    margin-top: -0.5%;
 }
 
 .img2Div>img {
@@ -419,37 +327,6 @@ footer {
 
 /*3rd screen css*/
 
-@media only screen and (max-width: 1500px) {
-    .textDivScreen3 {
-        margin: 0 auto;
-        width: 37%;
-        font-size: 65px;
-        font-weight: 700;
-        display: flex;
-        flex-direction: column;
-        color: #444444;
-    }
-    .cardS3 {
-        position: relative;
-        padding: 20px;
-        background: #F6F6F6;
-        border-radius: 10px;
-        width: 325px;
-        padding: 2%;
-        text-align: left;
-        margin-right: 2vh;
-        margin-top: 1vh;
-    }
-    .cardsGridWrapper {
-        width: 95%;
-        margin: 0 auto;
-        margin-bottom: 5vh;
-        margin-top: 5vh;
-        display: flex;
-        flex-direction: row;
-    }
-}
-
 .textDivScreen3 {
     margin: 0 auto;
     width: 37%;
@@ -465,7 +342,7 @@ footer {
     padding: 20px;
     background: #F6F6F6;
     border-radius: 10px;
-    width: 325px;
+    width: 320px;
     padding: 2%;
     text-align: left;
     margin-right: 2vh;
@@ -594,12 +471,12 @@ footer {
 }
 
 .gradientWrapper2 {
+    overflow: hidden;
     background: radial-gradient(circle closest-side, #7b9fd3, #FFFFFF);
     z-index: -1;
     position: absolute;
     width: 70%;
     height: 70%;
-    overflow: hidden;
     margin-top: 25%;
     margin-left: -30%;
 }
@@ -735,8 +612,7 @@ iframe {
 .scrool1Btns {
     width: 10%;
     position: absolute;
-    right: 0;
-    margin-top: -3.3%;
+    left: 74%;
 }
 
 .scrool1Btns .btn>img {
@@ -871,13 +747,12 @@ i {
     margin-top: 5%;
 }
 
-@media only screen and (min-width: 1550px) {
-    .swiper-container {
-        width: 95%;
-        margin-left: 2.5%;
-        height: 65vh;
-        margin-top: 5%;
-    }
+.swiper-container {
+    width: 95%;
+    margin-left: 2.5%;
+    height: 65vh;
+    margin-top: 5%;
+    overflow-x: hidden;
 }
 
 .swiper-slide {
