@@ -132,7 +132,7 @@ a :hover {
 
 footer {
     width: 90%;
-    height: 612px;
+    height: auto;
     margin: 0 auto;
     background-color: #0A6DE0;
     margin-bottom: 2%;
@@ -256,7 +256,8 @@ footer {
 /*2nd screen code*/
 
 .innerDiv1 {
-    width: 85%;
+    width: 724px;
+    height: 251px;
     background-color: #F6F6F6;
     color: #444444;
     border-radius: 15px;
@@ -265,22 +266,22 @@ footer {
 }
 
 .innerDiv2 {
-    width: 35%;
+    width: 390px;
     background-color: #F6F6F6;
     color: #444444;
     border-radius: 15px;
     padding: 5%;
-    height: 13vh;
+    height: 180px;
     margin: 2% 2% 2% 0;
 }
 
 #innerDiv3 {
-    width: 35%;
+    width: 390px;
     background-color: #F6F6F6;
     color: #444444;
     border-radius: 15px;
     padding: 5%;
-    height: 20vh;
+    height: 265px;
     margin: 2% 2% 2% 2%;
     float: right;
     top: 0;
@@ -292,17 +293,17 @@ footer {
     border: none;
     border-radius: 30px;
     padding: 15px;
-    width: 350px;
+    width: 380px;
     height: 60px;
     font-size: small;
     position: absolute;
-    margin-top: -0.5%;
+    margin-top: -80px;
 }
 
 .img2Div>img {
     margin-top: 3%;
-    height: 725px;
-    width: 536px;
+    height: 800px;
+    width: 527px;
     margin-left: 6%;
 }
 
@@ -347,6 +348,10 @@ footer {
     text-align: left;
     margin-right: 2vh;
     margin-top: 1vh;
+}
+
+.cardS3>ul>li {
+    color: #444444;
 }
 
 .cardsGridWrapper {
@@ -455,19 +460,19 @@ footer {
     height: 63px;
     padding: 0.5%;
     position: absolute;
-    margin-top: 700px;
-    margin-left: 34%;
+    margin-top: 600px;
+    margin-left: 485px;
 }
 
 .gradientWrapper3 {
     background: radial-gradient(circle closest-side, #7b9fd3, #FFFFFF);
     z-index: -1;
     position: absolute;
-    margin-left: 60%;
+    margin-left: 800px;
     width: 60%;
     height: 60%;
     overflow: hidden;
-    margin-top: 22%;
+    margin-top: 370px;
 }
 
 .gradientWrapper2 {
@@ -489,6 +494,7 @@ footer {
     flex-direction: row;
     width: 90%;
     margin: 0 auto;
+    margin-top: 20px;
     margin-bottom: 15vh;
     color: #444444;
 }
@@ -506,8 +512,8 @@ footer {
 
 .inputI {
     border-radius: 100px;
-    height: 6vh;
-    width: 32vw;
+    height: 50px;
+    width: 490px;
     border: 1px solid #444444;
     margin: 0.5%;
     margin-top: 1.5%;
@@ -529,7 +535,7 @@ iframe {
 }
 
 .main-text {
-    font-size: 4vw;
+    font-size: 57px;
     font-weight: 700;
 }
 
@@ -548,7 +554,7 @@ iframe {
     color: white;
     border: none;
     padding: 15px;
-    height: 63px;
+    height: 53px;
     width: 375px;
     font-size: small;
     margin-top: 3%;
@@ -584,6 +590,7 @@ iframe {
     text-align: right;
     float: right;
     margin-top: -2px;
+    margin-right: 70px;
 }
 
 .scrollImg {
@@ -625,8 +632,8 @@ iframe {
 .scrool1Btnss {
     width: 10%;
     position: absolute;
-    right: 0;
-    margin-top: 8%;
+    margin-left: 1144px;
+    margin-top: 70px;
     z-index: 9;
 }
 
@@ -655,12 +662,13 @@ i {
 #slider-container #slider {
     display: flex;
     width: 1100%;
-    height: 70%;
+    height: 500px;
     transition: all .5s;
+    z-index: 99999;
 }
 
 .slide {
-    height: 60%;
+    height: 380px;
     border-radius: 15px;
     margin: auto 40px;
     background-color: #F6F6F6;
@@ -785,6 +793,7 @@ i {
     font-weight: 500;
     font-size: 28px;
     margin: 5px 0;
+    margin-top: 30px;
 }
 
 .doctor-card p {
