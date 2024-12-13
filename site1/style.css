@@ -4,6 +4,7 @@
 }
 
 body {
+    position: relative;
     background-color: white;
     color: black;
     font-family: "Instrument Sans", sans-serif;
@@ -25,47 +26,6 @@ a :hover {
 
 /*heaeder css */
 
-@media only screen and (max-width: 1500px) {
-    .headerWrapper {
-        display: flex;
-        flex-direction: row;
-        padding-top: 1vh;
-        justify-content: space-between;
-    }
-    #headerButton {
-        color: #0A6DE0;
-        background-color: transparent;
-        border: 1px solid #0A6DE0;
-        border-radius: 20px;
-        padding: 4px;
-        width: 173px;
-        height: 34px;
-        margin-right: 2.5vw;
-        margin-top: 0.6vh;
-    }
-    #headerButton a {
-        color: #0A6DE0;
-        font-size: 17px;
-        font-weight: 400;
-    }
-    .headerImg {
-        width: auto;
-        height: 4vh;
-        margin-left: 20px;
-    }
-    .headerList {
-        list-style: none;
-        text-align: center;
-        display: flex;
-        flex-direction: row;
-        margin-top: 1vh;
-        width: 500px;
-    }
-    .headerList>li {
-        margin-right: 30px;
-    }
-}
-
 .headerWrapper {
     display: flex;
     flex-direction: row;
@@ -82,7 +42,7 @@ a :hover {
     width: 173px;
     height: 34px;
     margin-right: 2.5vw;
-    margin-top: 0.6vh;
+    margin-top: 15px;
 }
 
 #headerButton a {
@@ -102,9 +62,9 @@ a :hover {
     text-align: center;
     display: flex;
     flex-direction: row;
-    margin-top: 1vh;
+    margin-top: 20px;
     width: 500px;
-    font-weight: 500;
+    font-weight: 600;
 }
 
 .headerList>li {
@@ -114,8 +74,8 @@ a :hover {
 .gradientBtn {
     background: radial-gradient(circle closest-side, #7b9fd3, #FFFFFF);
     z-index: -1;
-    position: absolute;
-    margin-left: 950px;
+    position: fixed;
+    margin-left: 800px;
     top: -13%;
     width: 40%;
     height: 40%;
@@ -570,8 +530,7 @@ iframe {
 /*scroll bar 1 css*/
 
 .screenFourWrapper {
-    width: 90%;
-    height: 90vh;
+    width: 95%;
     margin: 0 auto;
     margin-top: 10%;
 }
@@ -749,6 +708,11 @@ i {
 
 
 /*slider 4 css*/
+
+.swiper-wrapper {
+    height: 500px !important;
+    width: 100% !important;
+}
 
 .swiper-container {
     width: 95%;
