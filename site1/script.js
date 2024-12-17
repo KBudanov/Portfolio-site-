@@ -132,10 +132,17 @@ $("#hideARR").on("click", function() {
 })
 
 //slider for screen 4 
+let slidesPerScreenV;
+if (innerWidth >= 760) {
+    slidesPerScreenV = 3.8;
 
+} else {
+    slidesPerScreenV = 2;
+
+}
 
 const swiper = new Swiper('.swiper-container', {
-    slidesPerView: 3.8,
+    slidesPerView: slidesPerScreenV,
     spaceBetween: 30,
     loop: true,
     navigation: {
@@ -147,17 +154,14 @@ const swiper = new Swiper('.swiper-container', {
         slideChangeTransitionEnd: function() {
             const slides = document.querySelectorAll('.swiper-slide');
             slides.forEach((slide) => {
-                //f   slide.style.height = '45vh'; // Default height for all slides
+
             });
 
             const activeSlide = document.querySelector('.swiper-slide-active');
             if (activeSlide) {
-                // activeSlide.style.height = '55vh'; // Increased height for active slide
+
             }
-            // Get all slides
 
-
-            // Loop through and toggle visibility
 
             slides.forEach((slide) => {
                 const textElements = slide.querySelectorAll('h3, p');
@@ -173,13 +177,6 @@ const swiper = new Swiper('.swiper-container', {
 });
 
 
-//burger menu 
-/*
-document.getElementById('burgerMenu').addEventListener('click', function() {
-    const headerList = document.getElementById('headerList');
-    headerList.classList.toggle('show');
-});
-*/
 
 
 //phone adaptivity

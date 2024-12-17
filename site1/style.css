@@ -717,13 +717,6 @@ i {
 .swiper-container {
     width: 95%;
     margin-left: 2.5%;
-    height: 55vh;
-    margin-top: 5%;
-}
-
-.swiper-container {
-    width: 95%;
-    margin-left: 2.5%;
     height: 65vh;
     margin-top: 5%;
     overflow-x: hidden;
@@ -850,7 +843,7 @@ i {
         color: #0A6DE0;
     }
     #headerButton {
-        opacity: 0;
+        display: none;
     }
     .headerImg {
         content: url("imgs/headerLogoPhone.png");
@@ -869,6 +862,7 @@ i {
         text-align: center;
         right: 20px;
         top: 60px;
+        border: 1px solid #0A6DE0;
     }
     .headerListMobile>li {
         margin-top: 30px;
@@ -876,4 +870,250 @@ i {
     .headerListMobile>li :hover {
         font-size: 20px;
     }
+    /*screen1*/
+    .imgBurger {
+        height: 20px;
+        width: 33px;
+    }
+    .wrapper1Screen {
+        display: none !important;
+    }
+    .wrapper1ScreenMobile {
+        display: block !important;
+        width: 95%;
+    }
+    .image1 {
+        display: none !important;
+    }
+    .largeTextM {
+        font-weight: 700;
+        font-size: 62px;
+        margin-left: 7px;
+        margin-top: -15px;
+        color: #444444;
+    }
+    .anotherTextM {
+        font-weight: 500;
+        font-size: 14px;
+        color: #444444;
+        margin-left: 7px;
+    }
+    .consultHeadButtonM {
+        background-color: #0A6DE0;
+        color: white;
+        border: none;
+        border-radius: 100px;
+        padding: 15px;
+        width: 365px;
+        height: 45px;
+        font-size: 17px;
+        font-weight: 500;
+        margin-left: 5px;
+        margin-top: 15px;
+    }
+    .image1M {
+        height: 367px;
+        width: 365px;
+        margin-left: 5px;
+        margin-top: 10px;
+    }
+    /*screen 2 */
+    .wrapper2Screen {
+        display: none !important;
+    }
+    .wrapperScreen2M {
+        display: block !important;
+        margin-top: 150px;
+    }
+    .secondScreenPM {
+        font-weight: 700;
+        font-size: 40px;
+        color: #444444;
+        width: auto;
+        margin-left: 117px !important;
+    }
+    .innerDiv1M {
+        width: 325px;
+        margin-left: 5px;
+        height: 158px;
+        background-color: #F6F6F6;
+        color: #444444;
+        border-radius: 15px;
+        padding: 5%;
+        margin-top: 20px;
+    }
+    .img2DivM>img {
+        height: 134px;
+        width: 360px;
+        margin-left: 5px;
+        margin-top: 20px;
+    }
+    .innerDiv2M {
+        width: 325px;
+        margin-left: 5px;
+        height: 120px;
+        background-color: #F6F6F6;
+        color: #444444;
+        border-radius: 15px;
+        padding: 5%;
+        margin-top: 20px;
+    }
+    .innerDiv3M {
+        width: 325px;
+        margin-left: 5px;
+        height: 129px;
+        background-color: #F6F6F6;
+        color: #444444;
+        border-radius: 15px;
+        padding: 5%;
+        margin-top: 20px;
+    }
+    .consultS2ButtonM {
+        margin-top: 20px;
+        background-color: #0A6DE0;
+        color: white;
+        border: none;
+        border-radius: 100px;
+        padding: 15px;
+        width: 365px;
+        height: 45px;
+        font-size: 17px;
+        font-weight: 500;
+        margin-left: 5px;
+    }
+    /*screen 3*/
+    .wrapper3Screen {
+        display: none !important;
+    }
+    .wrapper3ScreenM {
+        display: block !important;
+        margin-top: 150px;
+    }
+    .textDivScreen3M {
+        margin: 0 auto;
+        width: 337px;
+        text-align: center;
+        font-size: 40px;
+        font-weight: 700;
+        color: #444444;
+    }
+    .cardsWrapperM {
+        display: grid;
+        grid-template-columns: auto auto;
+        height: 660px;
+        width: 365px;
+        margin: 0 auto;
+        margin-top: 20px;
+    }
+    .cardS3M {
+        background: #F6F6F6;
+        border-radius: 10px;
+        width: 168px;
+        height: 210px;
+        text-align: left;
+    }
+    .cardS3M>ul>li {
+        color: #444444;
+    }
+    .cardS3M>ul {
+        width: 108px;
+        height: 82px;
+        margin: 0 auto;
+        margin-top: 10px;
+    }
+    .cardS3M>ul>li::marker {
+        color: #444444;
+    }
+    .cardS3M>h3 {
+        color: #444444;
+        font-size: 18px;
+        font-weight: 700;
+        text-align: left;
+        text-transform: uppercase;
+        width: 119.66px;
+        height: 39px;
+        margin: 0 auto;
+        margin-top: 10px;
+        font-family: Instrument Sans;
+    }
+    .cardS3M>p {
+        color: #444444;
+        font-size: 13px;
+        font-weight: 700;
+        width: 130px;
+        height: 39px;
+        margin: 0 auto;
+        margin-top: 10px;
+        font-family: Instrument Sans;
+        position: static;
+        bottom: 0;
+    }
+    .starM {
+        position: absolute;
+        color: blue;
+    }
+    .starM>img {
+        height: 25px;
+    }
+    .starM.top-rightM {
+        margin-top: -10px;
+        margin-left: 155px;
+    }
+    /*screen 4*/
+    .screenFourWrapper {
+        display: none !important;
+    }
+    .lowerTextScreen4 {
+        display: none !important;
+    }
+    .screenFourWrapperM {
+        display: block !important;
+        height: 1000px;
+        margin-top: 150px;
+    }
+    .textDivScrren4M>p {
+        font-weight: 700;
+        font-size: 35px;
+        margin-left: 15px;
+        color: #444444;
+    }
+    .swiper-wrapper {
+        height: 415px !important;
+        width: 100% !important;
+    }
+    .swiper-container {
+        width: 95%;
+        margin-left: 2.5%;
+        height: 500px;
+        margin-top: 5%;
+        overflow-x: hidden;
+    }
+    .swiper-slide {
+        display: flex;
+        width: 210px !important;
+        justify-content: center;
+        align-items: center;
+        opacity: 0.5;
+        transition: opacity 0.2s ease, transform 0.2s ease;
+        background-color: #F6F6F6;
+        border-radius: 15px;
+    }
+    .swiper-slide-active {
+        opacity: 1;
+        transition: height 0.6s ease-in-out;
+        transform: scale(1.1);
+        position: absolute;
+    }
+}
+
+.wrapperScreen2M {
+    display: none;
+}
+
+.wrapper3ScreenM {
+    display: none;
+}
+
+.screenFourWrapperM {
+    display: none;
 }
