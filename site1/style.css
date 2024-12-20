@@ -91,7 +91,7 @@ a :hover {
 
 /*footer*/
 
-footer {
+.footerDef {
     width: 90%;
     height: auto;
     margin: 0 auto;
@@ -1068,7 +1068,6 @@ i {
     }
     .screenFourWrapperM {
         display: block !important;
-        height: 1000px;
         margin-top: 150px;
     }
     .textDivScrren4M>p {
@@ -1104,6 +1103,80 @@ i {
         transform: scale(1.1);
         position: absolute;
     }
+    /*last screen*/
+    .lastScreenWrapper {
+        display: none !important;
+    }
+    .lastScreenWrapperM {
+        display: block !important;
+        margin-top: 150px;
+    }
+    .main-textM {
+        font-weight: 700;
+        font-size: 40px;
+        color: #444444;
+    }
+    .subtextM {
+        position: absolute;
+        margin-top: -45px;
+        margin-left: 120px;
+        color: #444444;
+        font-size: 14px;
+    }
+    .inputIM {
+        border-radius: 50px;
+        border: 1px solid #444444;
+        width: 278px;
+        height: 41px;
+        margin-top: 5px;
+        padding-left: 10px;
+        margin-left: 5px;
+        margin-top: 10px;
+    }
+    .inputIM:hover {
+        border: 1px solid #0A6DE0;
+    }
+    .consultLastScreenBtnM {
+        background-color: #0A6DE0;
+        color: white;
+        border: none;
+        border-radius: 100px;
+        padding: 15px;
+        width: 345px;
+        height: 45px;
+        font-size: 14px;
+        font-weight: 500;
+        margin-left: 5px;
+        margin-top: 15px;
+        margin-bottom: 25px;
+    }
+    /*footer*/
+    .footerDef {
+        display: none !important;
+    }
+    .footerM {
+        display: block !important;
+        color: #0A6DE0;
+        margin-top: 150px;
+    }
+    .footerListM {
+        color: #0A6DE0;
+        list-style: none;
+    }
+    .footerListM>li>a {
+        color: #0A6DE0;
+    }
+    .footerButtonM {
+        position: absolute;
+        margin-top: -45px;
+        margin-left: 210px;
+        color: #0A6DE0;
+        background-color: transparent;
+        border-radius: 100px;
+        border: 1px solid #0A6DE0;
+        width: 140px;
+        height: 32px;
+    }
 }
 
 .wrapper1ScreenMobile {
@@ -1119,5 +1192,13 @@ i {
 }
 
 .screenFourWrapperM {
+    display: none;
+}
+
+.lastScreenWrapperM {
+    display: none;
+}
+
+.footerM {
     display: none;
 }
