@@ -1106,6 +1106,10 @@ i {
     }
 }
 
+.wrapper1ScreenMobile {
+    display: none;
+}
+
 .wrapperScreen2M {
     display: none;
 }
