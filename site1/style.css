@@ -550,7 +550,6 @@ iframe {
     color: #444444;
     text-align: right;
     float: right;
-    margin-top: -2px;
     margin-right: 70px;
 }
 
@@ -756,14 +755,14 @@ i {
 /*slider 4 css*/
 
 .swiper-wrapper {
-    height: 500px !important;
+    height: 520px !important;
     width: 100% !important;
 }
 
 .swiper-container {
     width: 95%;
     margin-left: 2.5%;
-    height: 65vh;
+    height: 100%;
     margin-top: 5%;
     overflow-x: hidden;
 }
@@ -1149,6 +1148,47 @@ i {
         transform: scale(1.1);
         position: absolute;
     }
+    .scrool1BtnsM {
+        position: absolute;
+        width: 100px;
+        margin-left: 70%;
+        margin-top: -50px;
+    }
+    .lowerTextScreen4M {
+        float: right;
+        text-align: right;
+        margin-top: -70px;
+    }
+    /*screen five*/
+    .fifthScreenWrapper {
+        display: none !important;
+    }
+    .fifthScreenWrapperM {
+        display: block !important;
+        margin-top: 150px;
+    }
+    .shareYourExpM {
+        width: 345px;
+        height: 45px;
+        background-color: transparent;
+        border: 1px solid #0A6DE0;
+        font-size: 16px;
+        font-weight: 700;
+        color: #0A6DE0;
+        border-radius: 100px;
+        margin-left: 13px;
+    }
+    .scrool1BtnssM {
+        width: 100px;
+        float: right;
+        z-index: 9;
+    }
+    .scrool1BtnssM .btn>img {
+        width: 30px;
+        user-select: none;
+        cursor: pointer;
+        margin-left: 5px;
+    }
     /*last screen*/
     .lastScreenWrapper {
         display: none !important;
@@ -1238,6 +1278,10 @@ i {
 }
 
 .screenFourWrapperM {
+    display: none;
+}
+
+.fifthScreenWrapperM {
     display: none;
 }
 

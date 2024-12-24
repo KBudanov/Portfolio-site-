@@ -136,10 +136,83 @@ let slidesPerScreenV;
 if (innerWidth >= 760) {
     slidesPerScreenV = 3.8;
 
+    const swiper = new Swiper('.swiper-container', {
+        slidesPerView: slidesPerScreenV,
+        spaceBetween: 30,
+        loop: true,
+        navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
+        },
+        on: {
+
+            slideChangeTransitionEnd: function() {
+                const slides = document.querySelectorAll('.swiper-slide');
+                slides.forEach((slide) => {
+
+                });
+
+                const activeSlide = document.querySelector('.swiper-slide-active');
+                if (activeSlide) {
+
+                }
+
+
+                slides.forEach((slide) => {
+                    const textElements = slide.querySelectorAll('h3, p');
+                    if (slide.classList.contains('swiper-slide-active')) {
+                        textElements.forEach((el) => (el.style.opacity = '1'));
+
+                    } else {
+                        textElements.forEach((el) => (el.style.opacity = '0'));
+                    }
+                });
+            },
+        },
+    });
+
 } else {
-    slidesPerScreenV = 2;
+    slidesPerScreenV = 1.6;
+
+    const swiper = new Swiper('.swiper-container', {
+        slidesPerView: slidesPerScreenV,
+        spaceBetween: 5,
+        loop: true,
+        navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
+        },
+        on: {
+
+            slideChangeTransitionEnd: function() {
+                const slides = document.querySelectorAll('.swiper-slide');
+                slides.forEach((slide) => {
+
+                });
+
+                const activeSlide = document.querySelector('.swiper-slide-active');
+                if (activeSlide) {
+
+                }
+
+
+                slides.forEach((slide) => {
+                    const textElements = slide.querySelectorAll('h3, p');
+                    if (slide.classList.contains('swiper-slide-active')) {
+                        textElements.forEach((el) => (el.style.opacity = '1'));
+
+                    } else {
+                        textElements.forEach((el) => (el.style.opacity = '0'));
+                    }
+                });
+            },
+        },
+    });
 
 }
+
+
+
 
 const swiper = new Swiper('.swiper-container', {
     slidesPerView: slidesPerScreenV,
