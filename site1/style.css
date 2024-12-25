@@ -387,7 +387,7 @@ a :hover {
     display: flex;
     flex-direction: column;
     margin-bottom: 6%;
-    margin-top: 10%;
+    margin-top: 150px;
 }
 
 .fifthScreenText p {
@@ -422,7 +422,7 @@ a :hover {
     height: 63px;
     padding: 0.5%;
     position: absolute;
-    margin-top: 600px;
+    margin-top: 630px;
     margin-left: 485px;
 }
 
@@ -485,6 +485,7 @@ a :hover {
 
 .inputI::placeholder {
     margin: 2px;
+    font-weight: 500;
 }
 
 iframe {
@@ -519,6 +520,8 @@ iframe {
     height: 53px;
     width: 375px;
     font-size: small;
+    font-weight: 700;
+    font-size: 17px;
     margin-top: 3%;
     margin-left: -2%;
     border-radius: 100px;
@@ -537,7 +540,6 @@ iframe {
 
 .textDivScrren4 {
     width: auto;
-    margin-left: 3%;
 }
 
 .textDivScrren4>p {
@@ -550,7 +552,7 @@ iframe {
     color: #444444;
     text-align: right;
     float: right;
-    margin-right: 70px;
+    margin-right: 40px;
 }
 
 .scrollImg {
@@ -569,8 +571,8 @@ iframe {
 
 #slider-container {
     height: 70vh;
-    width: 95%;
-    float: left;
+    width: 107%;
+    margin-left: -35px;
     position: relative;
     overflow: hidden;
     padding: 20px;
@@ -578,8 +580,28 @@ iframe {
 
 .scrool1Btns {
     width: 10%;
+    position: relative;
+    margin-top: -35px;
+    float: right !important;
+}
+
+.swiper-button-prev::after,
+.swiper-button-next::after {
+    content: '' !important;
+}
+
+.scrool1Btns {
+    width: 10%;
     position: absolute;
-    left: 74%;
+    margin-left: 1144px;
+    z-index: 9;
+}
+
+.swiperButton {
+    width: 50px;
+    user-select: none;
+    cursor: pointer;
+    margin-left: 5px;
 }
 
 .scrool1Btns .btn>img {
@@ -590,18 +612,19 @@ iframe {
 }
 
 .scrool1Btnss {
-    width: 10%;
+    width: 200px;
     position: absolute;
-    margin-left: 1144px;
+    margin-left: 1075px;
     margin-top: 70px;
     z-index: 9;
 }
 
-.scrool1Btnss .btn>img {
+.scrool1Btnss img {
     width: 50px;
     user-select: none;
     cursor: pointer;
     margin-left: 5px;
+    margin-left: 40px;
 }
 
 i {
@@ -621,10 +644,10 @@ i {
 
 #slider-container #slider {
     display: flex;
-    width: 1100%;
+    width: 1000%;
     height: 500px;
     transition: all .5s;
-    z-index: 99999;
+    z-index: 10;
 }
 
 .slide {
@@ -755,15 +778,14 @@ i {
 /*slider 4 css*/
 
 .swiper-wrapper {
-    height: 520px !important;
+    height: 550px !important;
     width: 100% !important;
 }
 
 .swiper-container {
-    width: 95%;
-    margin-left: 2.5%;
+    width: 100%;
     height: 100%;
-    margin-top: 5%;
+    margin-top: 20px;
     overflow-x: hidden;
 }
 
