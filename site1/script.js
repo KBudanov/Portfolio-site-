@@ -85,6 +85,7 @@ function setParams(w) {
 setParams();
 
 function slideRight() {
+    console.log("onclick righ")
     if (currentPosition != 0) {
         slider.style.marginLeft = currentMargin + (100 / slidesPerPage) + '%';
         currentMargin += (100 / slidesPerPage);
@@ -99,6 +100,7 @@ function slideRight() {
 };
 
 function slideLeft() {
+    console.log("onclick left")
     if (currentPosition != slidesCount) {
         slider.style.marginLeft = currentMargin - (100 / slidesPerPage) + '%';
         currentMargin -= (100 / slidesPerPage);
@@ -258,5 +260,9 @@ let burgerBtn = $("#burgerMenu")
 $(".headerListMobile").toggle()
 
 $(burgerBtn).on("click", function() {
+    $(".headerListMobile").toggle()
+})
+
+$(".headerListMobile").children().on("click", function() {
     $(".headerListMobile").toggle()
 })

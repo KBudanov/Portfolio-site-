@@ -18,7 +18,7 @@
 </head>
 
 <body>
-    <header class="headerWrapper" id="header">
+    <header class="headerWrapper" id="headerM">
         <img src="imgs/headerImg.jpg" alt="logo image" class="headerImg">
         <ul class="headerList">
             <li><a href="#header">MAIN</a></li>
@@ -29,16 +29,16 @@
         </ul>
 
 
-        <div class="gradientBtn"></div>
+        <!-- <div class="gradientBtn"></div>-->
         <button class="burgerMenu" id="burgerMenu">
             <img src="imgs/burgerLogo.png" class="imgBurger" alt="">
         </button>
         <ul class="headerListMobile">
-            <li><a href="#header">MAIN</a></li>
-            <li><a href="#screen2" style="  white-space: nowrap;overflow: hidden; text-overflow: ellipsis; ">ABOUT US</a></li>
-            <li><a href="#screen3">SERVICES</a></li>
-            <li><a href="#screen4">REVIEWS</a></li>
-            <li><a href="#screen5">CONTACTS </a></li>
+            <li><a href="#headerM">MAIN</a></li>
+            <li><a href="#screen2M" style="  white-space: nowrap;overflow: hidden; text-overflow: ellipsis; ">ABOUT US</a></li>
+            <li><a href="#screen3M">SERVICES</a></li>
+            <li><a href="#screen4M">REVIEWS</a></li>
+            <li><a href="#screen5M">CONTACTS </a></li>
 
         </ul>
         <button id="headerButton"><a href="#consult">MESSAGE US</a></button>
@@ -102,7 +102,7 @@
         <div class="img2Div"><img src="imgs/img2.jpg" alt=""></div>
     </div>
 
-    <div class="wrapperScreen2M">
+    <div class="wrapperScreen2M" id="screen2M">
         <p class="secondScreenPM">ABOUT</p>
         <div class="innerDiv1M">
             <p style="font-size: 9px;">OUR MISSION</p>
@@ -203,7 +203,7 @@
 
     </div>
 
-    <div class="wrapper3ScreenM">
+    <div class="wrapper3ScreenM" id="screen3M">
         <div class="textDivScreen3M">
             <p>WHAT <span style="color: #0A6DE0;"> SERVICES</span> <br> WE OFFER</p>
         </div>
@@ -276,7 +276,7 @@
 
 
     <div class="screenFourWrapper">
-        <div class="gradientWrapper2"></div>
+        <!--    <div class="gradientWrapper2"></div>-->
         <div class="textDivScrren4">
             <p style="text-transform: uppercase;">Meet our <span style="color: #0A6DE0;">doctors</span></p>
             <div class="scrool1Btns">
@@ -341,8 +341,8 @@
         <div class="textDivScrren4M">
             <p style="text-transform: uppercase;">Meet <br> our <span style="color: #0A6DE0;">doctors</span></p>
             <div class="scrool1BtnsM">
-                <div class="swiper-button-prev mob"></div>
-                <div class="swiper-button-next mob"></div>
+                <div class="swiper-button-prev"><img class="swiperButtonM" src="imgs/left.png" alt=""></div>
+                <div class="swiper-button-next"><img class="swiperButtonM" src="imgs/right.png" alt=""></div>
             </div>
         </div>
         <div class="swiper-container">
@@ -508,11 +508,11 @@
                 </div>
             </div>
         </div>
-        <div class="gradientWrapper3"></div>
+        <!--<div class="gradientWrapper3"></div>-->
         <button class="shareYourExp" id="addReview">SHARE YOUR EXPERIRNCE</button>
     </div>
 
-    <div class="fifthScreenWrapperM" id="screen4">
+    <div class="fifthScreenWrapperM" id="screen4M">
         <div class="addReviews">
             <div class="addReviewTxt">
                 <p style="font-weight: 600; font-size: 32px; color: #444444; text-transform: uppercase;">Share <span style="color: #0A6DE0;">your experiance</span> with us!</p>
@@ -537,7 +537,7 @@
         <div id="container">
             <div id="slider-container">
                 <div id="slider">
-                    <div class="slide">
+                    <div class="slideM">
                         <img class="reviewImg" src="imgs/review1.png" alt="">
                         <div class=" starRight"><img src="imgs/starr.png " alt=""></div>
                         <div class="textSlider2">
@@ -654,7 +654,7 @@
 
     </div>
 
-    <div class="lastScreenWrapperM">
+    <div class="lastScreenWrapperM" id="consultM">
         <div class="allTextNformLastScreen">
             <div class="inputWrapper">
 
@@ -743,7 +743,7 @@
         </div>
     </footer>
 
-    <footer class="footerM">
+    <footer class="footerM" id="screen5M">
         <div style="margin-left: 2%;">
             <p style="font-size: 16px; font-weight: 600; text-transform: uppercase;">our contact information</p>
             <p style="margin-top: 10px; font-weight: 400; font-size: 16px;">Ukraine, Kyiv, Vasylkivska st. 49a</p>

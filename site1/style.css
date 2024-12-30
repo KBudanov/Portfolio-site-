@@ -456,7 +456,7 @@ a :hover {
     flex-direction: row;
     width: 90%;
     margin: 0 auto;
-    margin-top: 20px;
+    margin-top: -100px;
     margin-bottom: 15vh;
     color: #444444;
 }
@@ -569,6 +569,15 @@ iframe {
     place-items: center;
 }
 
+#containerM {
+    height: 75vh;
+    width: 500px;
+    margin: 0;
+    padding: 0;
+    display: grid;
+    place-items: center;
+}
+
 #slider-container {
     height: 70vh;
     width: 107%;
@@ -602,6 +611,14 @@ iframe {
     user-select: none;
     cursor: pointer;
     margin-left: 5px;
+}
+
+.swiperButtonM {
+    width: 40px;
+    user-select: none;
+    cursor: pointer;
+    margin-left: 5px;
+    margin-bottom: 30px;
 }
 
 .scrool1Btns .btn>img {
@@ -660,8 +677,14 @@ i {
     place-items: center;
 }
 
-#slider-container #slider .slide :hover {
-    /*made text visible*/
+.slideM {
+    height: 180px;
+    border-radius: 15px;
+    margin: auto 40px;
+    background-color: #F6F6F6;
+    box-shadow: 2px 2px 4px 2px white, -2px -2px 4px 2px white;
+    display: grid;
+    place-items: center;
 }
 
 @media only screen and (min-width: 1100px) {
@@ -896,7 +919,6 @@ i {
     body {
         width: 375px;
         margin: 0 auto;
-        border: 2px solid black;
     }
     .burgerMenu {
         display: block;
@@ -922,7 +944,7 @@ i {
         position: absolute;
         background-color: #F6F6F6;
         list-style: none;
-        border-radius: 5%;
+        border-radius: 15px;
         font-size: 15px;
         height: 300px;
         width: 150px;
