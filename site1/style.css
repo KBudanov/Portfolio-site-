@@ -677,16 +677,6 @@ i {
     place-items: center;
 }
 
-.slideM {
-    height: 180px;
-    border-radius: 15px;
-    margin: auto 40px;
-    background-color: #F6F6F6;
-    box-shadow: 2px 2px 4px 2px white, -2px -2px 4px 2px white;
-    display: grid;
-    place-items: center;
-}
-
 @media only screen and (min-width: 1100px) {
     #slider-container #slider .slide {
         width: calc(2.5% - 20px);
@@ -1335,4 +1325,36 @@ i {
 
 .footerM {
     display: none;
+}
+
+
+/*test*/
+
+@media only screen and (max-width: 550px) {
+    #slider-container {
+        width: 100%;
+        height: 60vh;
+        /* Adjust height for mobile */
+    }
+    #slider-container #slider .slide {
+        width: 100%;
+        /* Each slide takes full width */
+        margin: 0;
+        /* Remove extra margins */
+        height: 50vh;
+        /* Adjust slide height for smaller screens */
+    }
+    .scrool1Btnss {
+        width: 100%;
+        /* Center navigation buttons */
+        margin-left: 0;
+        /* Align buttons properly */
+        margin-top: 5px;
+        text-align: center;
+    }
+    .scrool1Btnss img {
+        width: 40px;
+        /* Adjust button size for mobile */
+        margin: 5px;
+    }
 }

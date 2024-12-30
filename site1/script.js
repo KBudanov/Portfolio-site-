@@ -133,6 +133,35 @@ $("#hideARR").on("click", function() {
     $("#addRinp2").val("")
 })
 
+
+/*
+function setMobileSlider() {
+    slider.style.transition = 'all 0.3s'; // Faster transition for mobile
+    slider.style.marginLeft = '0'; // Reset to the first slide on smaller screens
+    currentPosition = 0;
+    currentMargin = 0;
+    slidesPerPage = 1; // Show one slide at a time
+    slidesCount = slides - 1;
+}
+
+function setDesktopSlider() {
+    setParams(container.offsetWidth); // Use existing logic for desktop
+}
+
+// Check screen width and apply the respective logic
+function updateSliderMode() {
+    if (window.innerWidth <= 550) {
+        setMobileSlider();
+    } else {
+        setDesktopSlider();
+    }
+}
+
+window.addEventListener("resize", updateSliderMode); // Recheck on resize
+updateSliderMode(); // Initial setup
+
+*/
+
 //slider for screen 4 
 let slidesPerScreenV;
 if (innerWidth >= 760) {
