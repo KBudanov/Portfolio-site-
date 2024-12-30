@@ -1327,34 +1327,18 @@ i {
     display: none;
 }
 
-
-/*test*/
-
-@media only screen and (max-width: 550px) {
-    #slider-container {
-        width: 100%;
-        height: 60vh;
-        /* Adjust height for mobile */
+@media only screen and (max-width: 768px) {
+    /* slider */
+    .slider {
+        height: 400px;
     }
-    #slider-container #slider .slide {
-        width: 100%;
-        /* Each slide takes full width */
-        margin: 0;
-        /* Remove extra margins */
-        height: 50vh;
-        /* Adjust slide height for smaller screens */
+    /* slider-cards */
+    .slide-card {
+        width: 300px;
     }
-    .scrool1Btnss {
-        width: 100%;
-        /* Center navigation buttons */
-        margin-left: 0;
-        /* Align buttons properly */
-        margin-top: 5px;
-        text-align: center;
-    }
-    .scrool1Btnss img {
+    /* slider-arrows */
+    .arrow {
         width: 40px;
-        /* Adjust button size for mobile */
-        margin: 5px;
+        height: 40px;
     }
 }
