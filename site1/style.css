@@ -74,11 +74,11 @@ a :hover {
 .gradientBtn {
     background: radial-gradient(circle closest-side, #7b9fd3, #FFFFFF);
     z-index: -1;
-    position: fixed;
-    margin-left: 800px;
-    top: -13%;
+    position: absolute;
+    margin-left: 1000px;
+    top: -140px;
     width: 40%;
-    height: 40%;
+    height: 400px;
     overflow: hidden;
 }
 
@@ -430,11 +430,11 @@ a :hover {
     background: radial-gradient(circle closest-side, #7b9fd3, #FFFFFF);
     z-index: -1;
     position: absolute;
-    margin-left: 800px;
-    width: 60%;
-    height: 60%;
+    margin-left: 1000px;
+    width: 600px;
+    height: 600px;
     overflow: hidden;
-    margin-top: 370px;
+    margin-top: 400px;
 }
 
 .gradientWrapper2 {
@@ -443,8 +443,8 @@ a :hover {
     z-index: -1;
     position: absolute;
     width: 70%;
-    height: 70%;
-    margin-top: 25%;
+    height: 700px;
+    margin-top: 300px;
     margin-left: -30%;
 }
 
@@ -456,7 +456,7 @@ a :hover {
     flex-direction: row;
     width: 90%;
     margin: 0 auto;
-    margin-top: -100px;
+    margin-top: 250px;
     margin-bottom: 15vh;
     color: #444444;
 }
