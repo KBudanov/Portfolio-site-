@@ -71,15 +71,7 @@ function setParams(w) {
     };
     currentMargin = -currentPosition * (100 / slidesPerPage);
     slider.style.marginLeft = currentMargin + '%';
-    if (currentPosition > 0) {
-        buttons[0].classList.remove('inactive');
-    }
-    if (currentPosition < slidesCount) {
-        buttons[1].classList.remove('inactive');
-    }
-    if (currentPosition >= slidesCount) {
-        buttons[1].classList.add('inactive');
-    }
+
 }
 
 setParams();
@@ -91,12 +83,7 @@ function slideRight() {
         currentMargin += (100 / slidesPerPage);
         currentPosition--;
     };
-    if (currentPosition === 0) {
-        buttons[0].classList.add('inactive');
-    }
-    if (currentPosition < slidesCount) {
-        buttons[1].classList.remove('inactive');
-    }
+
 };
 
 function slideLeft() {
@@ -106,12 +93,7 @@ function slideLeft() {
         currentMargin -= (100 / slidesPerPage);
         currentPosition++;
     };
-    if (currentPosition == slidesCount) {
-        buttons[1].classList.add('inactive');
-    }
-    if (currentPosition > 0) {
-        buttons[0].classList.remove('inactive');
-    }
+
 };
 
 let addreviewDiv = $(".addReviews");
@@ -295,3 +277,5 @@ $(burgerBtn).on("click", function() {
 $(".headerListMobile").children().on("click", function() {
     $(".headerListMobile").toggle()
 })
+
+//for slider screen 4

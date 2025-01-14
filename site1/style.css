@@ -851,50 +851,33 @@ i {
 
 .custom-icon-left::before {
     content: '←';
-    /* Replace with an icon or image */
 }
 
 .custom-icon-right::before {
     content: '→';
 }
 
-
-/* Hide text for non-active slides */
-
 .swiper-slide .doctor-card h3,
 .swiper-slide .doctor-card p {
     opacity: 0;
     transition: opacity 0.3s ease;
-    /* Smooth appearance when becoming active */
 }
-
-
-/* Show text only for the active slide */
 
 .swiper-slide-active .doctor-card h3,
 .swiper-slide-active .doctor-card p {
     opacity: 1;
 }
 
-
-/* Apply grayscale filter to all images */
-
 .swiper-slide img {
     filter: grayscale(100%);
-    /* Make the image black and white */
     transition: filter 0.3s ease;
-    /* Smooth transition effect */
     position: absolute;
     bottom: 0;
     left: 0;
 }
 
-
-/* Remove grayscale filter for the active slide */
-
 .swiper-slide-active img {
     filter: grayscale(0%);
-    /* Show the image in full color */
 }
 
 .burgerMenu {
@@ -905,12 +888,19 @@ i {
 /*phone css*/
 
 @media only screen and (max-width: 768px) {
+    /* html,
+    body {
+        overflow-x: hidden;
+    }*/
     .burgerMenu {
         display: none;
     }
     body {
         width: 375px;
         margin: 0 auto;
+    }
+    .addReviews {
+        display: none;
     }
     .burgerMenu {
         display: block;
@@ -1339,6 +1329,9 @@ i {
         margin-left: 50%;
         margin-top: -150px !important;
     }
+    .gradientBtn {
+        display: none !important;
+    }
 }
 
 .wrapper1ScreenMobile {
@@ -1367,20 +1360,4 @@ i {
 
 .footerM {
     display: none;
-}
-
-@media only screen and (max-width: 768px) {
-    /* slider */
-    .slider {
-        height: 400px;
-    }
-    /* slider-cards */
-    .slide-card {
-        width: 300px;
-    }
-    /* slider-arrows */
-    .arrow {
-        width: 40px;
-        height: 40px;
-    }
 }
