@@ -888,10 +888,10 @@ i {
 /*phone css*/
 
 @media only screen and (max-width: 768px) {
-    /* html,
+    html,
     body {
         overflow-x: hidden;
-    }*/
+    }
     .burgerMenu {
         display: none;
     }
@@ -901,6 +901,9 @@ i {
     }
     .addReviews {
         display: none;
+    }
+    .fifthScreenTextM {
+        display: block !important;
     }
     .burgerMenu {
         display: block;
@@ -1203,6 +1206,7 @@ i {
         color: #0A6DE0;
         border-radius: 100px;
         margin-left: 13px;
+        margin-top: 20px;
     }
     .scrool1BtnssM {
         width: 100px;
@@ -1360,4 +1364,86 @@ i {
 
 .footerM {
     display: none;
+}
+
+.fifthScreenTextM {
+    display: none !important;
+}
+
+@media screen and (max-width: 768px) {
+    .textSlider2M {
+        margin-top: 0px;
+        height: 70px;
+        width: 90%;
+    }
+    .slider-containerr {
+        width: 90%;
+        position: relative;
+        background-color: white;
+        border-radius: 10px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        margin-left: 10px;
+    }
+    .sliderr {
+        display: flex;
+        transition: transform 0.5s ease-in-out;
+    }
+    .slidee {
+        min-width: calc(100% / 1.5);
+        height: 301px;
+        box-sizing: border-box;
+        margin-right: 35px;
+        text-align: center;
+        background-color: #F6F6F6;
+        border-radius: 7.5px;
+    }
+    .reviewImgM {
+        height: 73px;
+        width: 73px;
+        position: relative;
+        top: -40px;
+        left: -90px;
+    }
+    .starMM {
+        position: absolute;
+    }
+    .starMM img {
+        width: 17.5px;
+        height: 24.5px;
+        position: absolute;
+        font-size: 20px;
+        color: blue;
+        top: -90px;
+        right: -235px;
+    }
+    .buttons {
+        position: absolute;
+        top: -20%;
+        width: 20%;
+        left: 70%;
+        display: flex;
+        justify-content: space-between;
+        transform: translateY(-50%);
+    }
+    .buttons button {
+        background: none;
+        border: none;
+        font-size: 24px;
+        cursor: pointer;
+        padding: 10px;
+    }
+    .buttons button:focus {
+        outline: none;
+    }
+    p {
+        margin: 0;
+        float: left;
+        margin-left: 10px;
+    }
+    .mobSliderBtns {
+        width: 40px;
+        user-select: none;
+        cursor: pointer;
+        margin-left: 5px;
+    }
 }

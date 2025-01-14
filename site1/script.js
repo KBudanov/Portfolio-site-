@@ -279,3 +279,23 @@ $(".headerListMobile").children().on("click", function() {
 })
 
 //for slider screen 4
+const sliderrr = document.querySelector('.sliderr');
+const slidesss = document.querySelectorAll('.slidee');
+const prevButton = document.getElementById('prev');
+const nextButton = document.getElementById('next');
+
+let currentIndex = 0;
+
+function updateSlider() {
+    sliderrr.style.transform = `translateX(-${currentIndex * (100 / 1.5)}%)`;
+}
+
+prevButton.addEventListener('click', () => {
+    currentIndex = (currentIndex > 0) ? currentIndex - 1 : slidesss.length - 1;
+    updateSlider();
+});
+
+nextButton.addEventListener('click', () => {
+    currentIndex = (currentIndex < slidesss.length - 1) ? currentIndex + 1 : 0;
+    updateSlider();
+});
