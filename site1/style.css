@@ -904,6 +904,8 @@ i {
     }
     .fifthScreenTextM {
         display: block !important;
+        margin-top: 150px;
+        text-align: center;
     }
     .burgerMenu {
         display: block;
@@ -997,7 +999,7 @@ i {
     }
     .wrapperScreen2M {
         display: block !important;
-        margin-top: 150px;
+        margin-top: 250px;
     }
     .secondScreenPM {
         font-weight: 700;
@@ -1005,6 +1007,8 @@ i {
         color: #444444;
         width: auto;
         margin-left: 117px !important;
+        position: absolute;
+        margin-top: -80px;
     }
     .innerDiv1M {
         width: 325px;
@@ -1067,7 +1071,7 @@ i {
         margin: 0 auto;
         width: 337px;
         text-align: center;
-        font-size: 40px;
+        font-size: 35px;
         font-weight: 700;
         color: #444444;
     }
@@ -1113,6 +1117,8 @@ i {
     .cardS3M>p {
         color: #444444;
         font-size: 13px;
+        white-space: nowrap;
+        margin-left: 7% !important;
         font-weight: 700;
         width: 130px;
         height: 39px;
@@ -1180,8 +1186,9 @@ i {
     .scrool1BtnsM {
         position: absolute;
         width: 100px;
-        margin-left: 70%;
-        margin-top: -50px;
+        margin-left: 65%;
+        margin-top: 40px;
+        user-select: none;
     }
     .lowerTextScreen4M {
         float: right;
@@ -1194,9 +1201,10 @@ i {
     }
     .fifthScreenWrapperM {
         display: block !important;
-        margin-top: 150px;
+        margin-top: 360px;
     }
     .shareYourExpM {
+        display: block !important;
         width: 345px;
         height: 45px;
         background-color: transparent;
@@ -1234,8 +1242,8 @@ i {
     }
     .subtextM {
         position: absolute;
-        margin-top: -45px;
-        margin-left: 120px;
+        margin-top: 105px;
+        margin-left: 135px;
         color: #444444;
         font-size: 14px;
     }
@@ -1273,18 +1281,25 @@ i {
     .footerM {
         display: block !important;
         color: #0A6DE0;
-        margin-top: 150px;
+        margin-top: 250px;
+        bottom: 0;
     }
     .footerListM {
         color: #0A6DE0;
         list-style: none;
+        margin-bottom: 30px;
+        margin-left: 3%;
+    }
+    .footerMainListM {
+        position: absolute;
+        margin-top: -140px;
     }
     .footerListM>li>a {
         color: #0A6DE0;
     }
     .footerButtonM {
         position: absolute;
-        margin-top: -45px;
+        margin-top: -65px;
         margin-left: 210px;
         color: #0A6DE0;
         background-color: transparent;
@@ -1367,15 +1382,11 @@ i {
 }
 
 .fifthScreenTextM {
-    display: none !important;
-}
-
-.fifthScreenWrapperM {
-    display: none !important;
+    display: none;
 }
 
 .shareYourExpM {
-    display: none !important;
+    display: none;
 }
 
 @media screen and (max-width: 768px) {
@@ -1387,9 +1398,7 @@ i {
     .slider-containerr {
         width: 90%;
         position: relative;
-        background-color: white;
         border-radius: 10px;
-        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
         margin-left: 10px;
     }
     .sliderr {
