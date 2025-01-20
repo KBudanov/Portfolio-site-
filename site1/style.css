@@ -1203,6 +1203,16 @@ i {
         display: block !important;
         margin-top: 360px;
     }
+    .fifthScreenGradientM {
+        background: radial-gradient(circle closest-side, #9dc3f7, #FFFFFF);
+        z-index: -1;
+        position: absolute;
+        margin-top: 260px;
+        margin-left: 150px;
+        width: 420px;
+        height: 550px;
+        overflow: hidden;
+    }
     .shareYourExpM {
         display: block !important;
         width: 345px;
