@@ -99,7 +99,7 @@ a :hover {
     margin-bottom: 2%;
     border-radius: 30px;
     color: #FFFFFF;
-    margin-top: 200px;
+    margin-top: 100px;
 }
 
 .footerTextWr {
@@ -457,7 +457,7 @@ a :hover {
     flex-direction: row;
     width: 90%;
     margin: 0 auto;
-    margin-top: 180px;
+    margin-top: -130px;
     margin-bottom: 15vh;
     color: #444444;
 }
@@ -1367,6 +1367,14 @@ i {
 }
 
 .fifthScreenTextM {
+    display: none !important;
+}
+
+.fifthScreenWrapperM {
+    display: none !important;
+}
+
+.shareYourExpM {
     display: none !important;
 }
 
