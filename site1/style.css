@@ -923,6 +923,7 @@ i {
     }
     .headerImg {
         content: url("imgs/headerLogoPhone.png");
+        margin-left: 10px;
     }
     .headerList {
         display: none;
@@ -1186,7 +1187,7 @@ i {
     .scrool1BtnsM {
         position: absolute;
         width: 100px;
-        margin-left: 65%;
+        margin-left: 72%;
         margin-top: 40px;
         user-select: none;
     }
@@ -1260,7 +1261,7 @@ i {
     .inputIM {
         border-radius: 50px;
         border: 1px solid #444444;
-        width: 278px;
+        width: 335px;
         height: 41px;
         margin-top: 5px;
         padding-left: 10px;
